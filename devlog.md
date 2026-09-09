@@ -16,3 +16,12 @@
 - **Link:** http://arxiv.org/abs/2609.09099v1
 
 > Curriculum learning is governed by several coupled design choices---how difficulty is defined, how examples are ordered, how much exposure each level receives, and how quickly training moves across levels---making it hard to isolate what actually helps. We present Wasserstein curriculum paths, a simple transport-based framework that decouples these factors by representing curricula as trajectories...
+
+## 2026-09-10
+
+**Paper of the day** — Learning Length-Extrapolatable Recurrent Models
+
+- **Authors:** Hanwen Jiang
+- **Link:** http://arxiv.org/abs/2609.09157v1
+
+> Recurrent models provide a natural path to long-context modeling, yet models trained with backpropagation through time (BPTT) often fail beyond their training horizon. Classical analyses emphasize gradients that vanish or explode along temporal paths. However, dense per-token losses can still train a shared recurrent rule despite severe decay, showing that decay alone does not determine whether le...
