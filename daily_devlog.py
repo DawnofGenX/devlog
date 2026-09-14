@@ -25,7 +25,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 
-REPO = os.path.expanduser("~/gh-polish/devlog")
+REPO = os.environ.get("DEVLOG_REPO") or os.path.expanduser("~/gh-polish/devlog")
 LOGFILE = os.path.join(REPO, "devlog.md")
 BACKLOG = os.path.join(REPO, "backlog.json")
 ARXIV_URL = (
@@ -140,7 +140,7 @@ def save_backlog(data):
         json.dump(data, f, indent=2)
 
 
-def commit_and_push(date_str, titles):
+def commit_and_push(date_str, titles, push_remote="origin"):
     c = git("add", "devlog.md")
     if c.returncode != 0:
         log(f"git add failed: {c.stderr}")
@@ -157,11 +157,11 @@ def commit_and_push(date_str, titles):
         return 1
     log(f"committed: {cm.stdout.strip().splitlines()[0] if cm.stdout else msg}")
 
-    push = git("push", "origin", "HEAD")
+    push = git("push", push_remote, "HEAD")
     if push.returncode != 0:
         log(f"git push FAILED: {push.stderr}")
         return 1
-    log("pushed to origin. green square secured.")
+    log(f"pushed to {push_remote}. green square secured.")
     return 0
 
 
@@ -170,10 +170,25 @@ def main():
     parser.add_argument("--force", action="store_true", help="Overwrite today's entry")
     parser.add_argument("--backlog", type=int, metavar="N", default=0,
                         help="Pre-stage entries for the next N days in backlog.json")
+    parser.add_argument("--date", default=None,
+                        help="Pin the entry to this YYYY-MM-DD (IST) instead of now")
+    parser.add_argument("--push-remote", default="origin",
+                        help="Git remote to push to (default: origin)")
     args = parser.parse_args()
 
     now_ist = datetime.now(IST)
-    date_str = now_ist.strftime("%Y-%m-%d")
+    if args.date:
+        datetime.strptime(args.date, "%Y-%m-%d")  # validate
+        date_str = args.date
+    else:
+        date_str = now_ist.strftime("%Y-%m-%d")
+
+    # Best-effort sync with the remote so a concurrent committer (e.g. the
+    # GitHub Actions workflow vs local cron) can't cause a non-fast-forward
+    # push later. Offline-safe: failures just mean we proceed with local state.
+    p = git("pull", "--ff-only", "origin", "HEAD")
+    if p.returncode != 0:
+        log(f"note: could not sync with origin ({p.stderr.strip().splitlines()[-1] if p.stderr else 'unknown'}); continuing locally")
 
     # Idempotency guard: skip if today's header already present (unless --force).
     existing = ""
@@ -249,7 +264,7 @@ def main():
         f.write(entry)
     log(f"appended entry with {len(papers)} papers to {LOGFILE}")
 
-    return commit_and_push(date_str, [p["title"] for p in papers])
+    return commit_and_push(date_str, [p["title"] for p in papers], args.push_remote)
 
 
 if __name__ == "__main__":

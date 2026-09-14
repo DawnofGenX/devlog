@@ -1,0 +1,52 @@
+name: daily-devlog
+
+# Runs on GitHub's infrastructure (always online) so the green square is
+# secured even when the local WSL machine is off. The local cron remains as a
+# second chance; the script's idempotency guard means whichever runs first
+# wins and the other no-ops cleanly.
+#
+# Commit author MUST be the account noreply email or GitHub won't count the
+# contribution toward DawnofGenX's graph.
+on:
+  schedule:
+    # 03:30 UTC = 09:00 IST, same window as the local cron.
+    - cron: "30 3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-devlog
+  cancel-in-progress: false
+
+jobs:
+  devlog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run daily devlog entry
+        env:
+          DEVLOG_REPO: ${{ github.workspace }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Pin the entry to "today" in IST so the square lands on the right
+          # calendar day regardless of runner clock drift.
+          TODAY_IST=$(TZ=Asia/Kolkata date +%F)
+          # Push via a token-authenticated remote; keep 'origin' for reads.
+          git remote add pusher \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          # Make the commit count toward the owner's contribution graph.
+          git config user.name "DawnofGenX"
+          git config user.email "97001446+DawnofGenX@users.noreply.github.com"
+          python3 daily_devlog.py --date "$TODAY_IST" --push-remote pusher || true
+          # Surface the outcome; a no-op (entry already present) is success.
+          git log --oneline -1
