@@ -27,6 +27,7 @@ ARXIV_URL = (
     "https://export.arxiv.org/api/query"
     "?search_query=cat:cs.LG&sortBy=submittedDate&sortOrder=descending&max_results=3"
 )
+RSS_URL = "https://rss.arxiv.org/rss/cs.LG"
 IST = timezone(timedelta(hours=5, minutes=30))
 NS = {"atom": "http://www.w3.org/2005/Atom"}
 
@@ -35,26 +36,59 @@ def log(msg):
     print(f"[devlog {datetime.now(IST).strftime('%Y-%m-%d %H:%M IST')}] {msg}", flush=True)
 
 
+def _fmt_authors(authors):
+    if len(authors) > 4:
+        return ", ".join(authors[:4]) + f" et al. ({len(authors)} total)"
+    return ", ".join(authors)
+
+
 def fetch_top_papers(n=3):
-    """Return list of dicts(title, authors, url, abstract) for the n newest cs.LG papers."""
-    req = urllib.request.Request(ARXIV_URL, headers={"User-Agent": "devlog-bot/1.0"})
+    """Return list of dicts(title, authors, url, abstract) for the n newest cs.LG papers.
+
+    Tries the export API first; falls back to the RSS feed on HTTP errors
+    (the export API 429s under load, which would otherwise break cron).
+    """
+    try:
+        req = urllib.request.Request(ARXIV_URL, headers={"User-Agent": "devlog-bot/1.0"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            data = r.read()
+        root = ET.fromstring(data)
+        entries = root.findall("atom:entry", NS)
+        if not entries:
+            raise RuntimeError("arXiv feed returned no entries")
+        out = []
+        for e in entries[:n]:
+            title = re.sub(r"\s+", " ", e.findtext("atom:title", "", NS)).strip()
+            url = e.findtext("atom:id", "", NS).strip()
+            summary = re.sub(r"\s+", " ", e.findtext("atom:summary", "", NS)).strip()
+            authors = [a.findtext("atom:name", "", NS) for a in e.findall("atom:author", NS)]
+            out.append({"title": title, "authors": _fmt_authors(authors), "url": url, "abstract": summary})
+        return out
+    except Exception as ex:  # noqa: BLE001 - fall through to RSS
+        log(f"export API failed ({type(ex).__name__}: {ex}); falling back to RSS feed")
+        return fetch_top_papers_rss(n)
+
+
+def fetch_top_papers_rss(n=3):
+    """Fallback: parse the arXiv cs.LG RSS feed (different endpoint, rarely 429s)."""
+    req = urllib.request.Request(RSS_URL, headers={"User-Agent": "devlog-bot/1.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
         data = r.read()
     root = ET.fromstring(data)
-    entries = root.findall("atom:entry", NS)
-    if not entries:
-        raise RuntimeError("arXiv feed returned no entries")
+    items = root.findall(".//item")
+    if not items:
+        raise RuntimeError("arXiv RSS feed returned no items")
+    DC = {"dc": "http://purl.org/dc/elements/1.1/"}
     out = []
-    for e in entries[:n]:
-        title = re.sub(r"\s+", " ", e.findtext("atom:title", "", NS)).strip()
-        url = e.findtext("atom:id", "", NS).strip()
-        summary = re.sub(r"\s+", " ", e.findtext("atom:summary", "", NS)).strip()
-        authors = [a.findtext("atom:name", "", NS) for a in e.findall("atom:author", NS)]
-        if len(authors) > 4:
-            authors_str = ", ".join(authors[:4]) + f" et al. ({len(authors)} total)"
-        else:
-            authors_str = ", ".join(authors)
-        out.append({"title": title, "authors": authors_str, "url": url, "abstract": summary})
+    for it in items[:n]:
+        title = re.sub(r"\s+", " ", it.findtext("title", "")).strip()
+        url = it.findtext("link", "").strip()
+        desc = re.sub(r"\s+", " ", it.findtext("description", "")).strip()
+        m = re.search(r"Abstract:\s*(.*)$", desc)
+        summary = m.group(1).strip() if m else desc
+        authors = [a.findtext("dc:creator", "", DC) for a in it.findall("author")]
+        authors = [a for a in authors if a]
+        out.append({"title": title, "authors": _fmt_authors(authors) or "unknown", "url": url, "abstract": summary})
     return out
 
 
