@@ -5,6 +5,9 @@ Appends ONE dated entry with up to 3 real arXiv cs.LG papers to devlog.md
 and commits + pushes it. Idempotent: if today's entry already exists,
 exits 0 without committing (so double-runs or catch-up never duplicate).
 Pass --force to overwrite today's entry (useful for upgrading 1-paper days).
+Pass --backlog N to pre-stage entries for the next N days in backlog.json;
+the daily run consumes today's staged entry (if any) before hitting the
+network, so the green square survives WSL being off during the fetch window.
 
 Content source: the 3 most-recently-submitted arXiv papers in cs.LG.
 A genuine, verifiable learning log — not padded filler.
@@ -13,6 +16,7 @@ Designed to be safe under cron: no network retry storms, bounded timeouts,
 clear logging, non-zero exit on hard failure so gaps are visible.
 """
 import argparse
+import json
 import sys
 import os
 import re
@@ -23,6 +27,7 @@ from datetime import datetime, timezone, timedelta
 
 REPO = os.path.expanduser("~/gh-polish/devlog")
 LOGFILE = os.path.join(REPO, "devlog.md")
+BACKLOG = os.path.join(REPO, "backlog.json")
 ARXIV_URL = (
     "https://export.arxiv.org/api/query"
     "?search_query=cat:cs.LG&sortBy=submittedDate&sortOrder=descending&max_results=3"
@@ -42,14 +47,14 @@ def _fmt_authors(authors):
     return ", ".join(authors)
 
 
-def fetch_top_papers(n=3):
-    """Return list of dicts(title, authors, url, abstract) for the n newest cs.LG papers.
+def fetch_top_papers(n=3, offset=0):
+    """Return list of dicts(title, authors, url, abstract) for n newest cs.LG papers.
 
     Tries the export API first; falls back to the RSS feed on HTTP errors
     (the export API 429s under load, which would otherwise break cron).
     """
     try:
-        req = urllib.request.Request(ARXIV_URL, headers={"User-Agent": "devlog-bot/1.0"})
+        req = urllib.request.Request(ARXIV_URL + f"&start={offset}", headers={"User-Agent": "devlog-bot/1.0"})
         with urllib.request.urlopen(req, timeout=30) as r:
             data = r.read()
         root = ET.fromstring(data)
@@ -66,7 +71,7 @@ def fetch_top_papers(n=3):
         return out
     except Exception as ex:  # noqa: BLE001 - fall through to RSS
         log(f"export API failed ({type(ex).__name__}: {ex}); falling back to RSS feed")
-        return fetch_top_papers_rss(n)
+        return fetch_top_papers_rss(n, offset)
 
 
 def _fetch_authors_from_abs(url):
@@ -80,7 +85,7 @@ def _fetch_authors_from_abs(url):
         return []
 
 
-def fetch_top_papers_rss(n=3):
+def fetch_top_papers_rss(n=3, offset=0):
     """Fallback: parse the arXiv cs.LG RSS feed (different endpoint, rarely 429s)."""
     req = urllib.request.Request(RSS_URL, headers={"User-Agent": "devlog-bot/1.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
@@ -91,7 +96,7 @@ def fetch_top_papers_rss(n=3):
         raise RuntimeError("arXiv RSS feed returned no items")
     DC = {"dc": "http://purl.org/dc/elements/1.1/"}
     out = []
-    for it in items[:n]:
+    for it in items[offset:offset + n]:
         title = re.sub(r"\s+", " ", it.findtext("title", "")).strip()
         url = it.findtext("link", "").strip()
         desc = re.sub(r"\s+", " ", it.findtext("description", "")).strip()
@@ -123,9 +128,48 @@ def git(*args):
     return subprocess.run(["git", *args], cwd=REPO, capture_output=True, text=True)
 
 
+def load_backlog():
+    if os.path.exists(BACKLOG):
+        with open(BACKLOG, encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def save_backlog(data):
+    with open(BACKLOG, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+
+def commit_and_push(date_str, titles):
+    c = git("add", "devlog.md")
+    if c.returncode != 0:
+        log(f"git add failed: {c.stderr}")
+        return 1
+    st = git("diff", "--cached", "--quiet")
+    if st.returncode == 0:
+        log("no staged changes; skipping commit")
+        return 0
+
+    msg = f"log: {date_str} — {', '.join(t[:40] for t in titles)}"
+    cm = git("commit", "-m", msg)
+    if cm.returncode != 0:
+        log(f"git commit failed: {cm.stderr}")
+        return 1
+    log(f"committed: {cm.stdout.strip().splitlines()[0] if cm.stdout else msg}")
+
+    push = git("push", "origin", "HEAD")
+    if push.returncode != 0:
+        log(f"git push FAILED: {push.stderr}")
+        return 1
+    log("pushed to origin. green square secured.")
+    return 0
+
+
 def main():
     parser = argparse.ArgumentParser(description="Daily devlog entry")
     parser.add_argument("--force", action="store_true", help="Overwrite today's entry")
+    parser.add_argument("--backlog", type=int, metavar="N", default=0,
+                        help="Pre-stage entries for the next N days in backlog.json")
     args = parser.parse_args()
 
     now_ist = datetime.now(IST)
@@ -137,14 +181,50 @@ def main():
         with open(LOGFILE, encoding="utf-8") as f:
             existing = f.read()
     has_today = f"\n## {date_str}\n" in existing or existing.startswith(f"## {date_str}\n")
-    if has_today and not args.force:
+    if has_today and not args.force and args.backlog == 0:
         log(f"entry for {date_str} already present; nothing to do")
         return 0
 
-    log("fetching top 3 cs.LG papers from arXiv...")
-    papers = fetch_top_papers(3)
-    for p in papers:
-        log(f"  - {p['title'][:70]}")
+    # Backlog mode: pre-stage entries for the next N days (no commit/push).
+    if args.backlog > 0:
+        backlog = load_backlog()
+        for i in range(1, args.backlog + 1):
+            d = (now_ist + timedelta(days=i)).strftime("%Y-%m-%d")
+            if d in backlog:
+                log(f"{d}: already staged; skipping")
+                continue
+            log(f"staging {d}: fetching top 3 cs.LG papers...")
+            try:
+                # Offset each day's slice so consecutive days get distinct papers
+                # (the RSS snapshot is static within a day; the export API also
+                # serves the same newest-first list until arXiv announces more).
+                papers = fetch_top_papers(3, offset=(i - 1) * 3)
+                if not papers:
+                    raise RuntimeError("feed slice was empty")
+            except Exception as ex:  # noqa: BLE001 - keep going, report at end
+                log(f"  ERROR staging {d}: {type(ex).__name__}: {ex}")
+                continue
+            for p in papers:
+                log(f"  - {p['title'][:70]}")
+            backlog[d] = {"papers": papers, "staged_at": now_ist.isoformat()}
+            save_backlog(backlog)
+        remaining = sorted(d for d in backlog if d >= date_str)
+        log(f"backlog ready: {remaining}")
+        return 0
+
+    # Daily run: consume a staged entry for today if one exists (offline-safe).
+    papers = None
+    backlog = load_backlog()
+    if date_str in backlog:
+        papers = backlog[date_str]["papers"]
+        del backlog[date_str]
+        save_backlog(backlog)
+        log(f"using pre-staged entry for {date_str} ({len(papers)} papers)")
+    else:
+        log("fetching top 3 cs.LG papers from arXiv...")
+        papers = fetch_top_papers(3)
+        for p in papers:
+            log(f"  - {p['title'][:70]}")
 
     entry = make_entry(date_str, papers)
 
@@ -169,29 +249,7 @@ def main():
         f.write(entry)
     log(f"appended entry with {len(papers)} papers to {LOGFILE}")
 
-    c = git("add", "devlog.md")
-    if c.returncode != 0:
-        log(f"git add failed: {c.stderr}")
-        return 1
-    st = git("diff", "--cached", "--quiet")
-    if st.returncode == 0:
-        log("no staged changes; skipping commit")
-        return 0
-
-    titles = ", ".join(p["title"][:40] for p in papers)
-    msg = f"log: {date_str} — {titles}"
-    cm = git("commit", "-m", msg)
-    if cm.returncode != 0:
-        log(f"git commit failed: {cm.stderr}")
-        return 1
-    log(f"committed: {cm.stdout.strip().splitlines()[0] if cm.stdout else msg}")
-
-    push = git("push", "origin", "HEAD")
-    if push.returncode != 0:
-        log(f"git push FAILED: {push.stderr}")
-        return 1
-    log("pushed to origin. green square secured.")
-    return 0
+    return commit_and_push(date_str, [p["title"] for p in papers])
 
 
 if __name__ == "__main__":
