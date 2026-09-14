@@ -69,6 +69,17 @@ def fetch_top_papers(n=3):
         return fetch_top_papers_rss(n)
 
 
+def _fetch_authors_from_abs(url):
+    """Scrape citation_author meta tags from an arXiv abs page (best effort)."""
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "devlog-bot/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            html = r.read().decode("utf-8", errors="replace")
+        return re.findall(r'<meta name="citation_author" content="([^"]+)"', html)
+    except Exception:  # noqa: BLE001 - best effort only
+        return []
+
+
 def fetch_top_papers_rss(n=3):
     """Fallback: parse the arXiv cs.LG RSS feed (different endpoint, rarely 429s)."""
     req = urllib.request.Request(RSS_URL, headers={"User-Agent": "devlog-bot/1.0"})
@@ -87,7 +98,7 @@ def fetch_top_papers_rss(n=3):
         m = re.search(r"Abstract:\s*(.*)$", desc)
         summary = m.group(1).strip() if m else desc
         authors = [a.findtext("dc:creator", "", DC) for a in it.findall("author")]
-        authors = [a for a in authors if a]
+        authors = [a for a in authors if a] or _fetch_authors_from_abs(url)
         out.append({"title": title, "authors": _fmt_authors(authors) or "unknown", "url": url, "abstract": summary})
     return out
 
