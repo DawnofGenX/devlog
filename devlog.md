@@ -68,3 +68,29 @@
 - **Link:** https://arxiv.org/abs/2609.11937
 
 > The deployment of Federated Learning (FL) in multi-center clinical networks faces the challenge of "knowledge dominance," where high-volume hubs naturally overwhelm minority community nodes, implicitly treating the distinct clinical patterns of smaller cohorts as outliers. Existing geometric defenses provide a security baseline but leave this efficiency-fairness dilemma unresolved. To bridge this...
+
+## 2026-09-15
+
+
+### Paper 1 — Fundamental Dynamical Units for Physics-Informed Structural Inference from Perturbation Time-Series in Networked Systems
+
+- **Authors:** Nouri, Nima
+- **Link:** https://arxiv.org/abs/2609.11934
+
+> In networked dynamical systems, the parameter of primary mechanistic interest is signed interaction structure. Recovering this structure from perturbation time-series data is a fundamental identification problem, compounded by three coupled obstacles: the combinatorial complexity of interaction architectures, ambiguity of causal attribution under limited interventions, and state-dependent dynamics...
+
+
+### Paper 2 — Physics-Informed Conformal Prediction: Embedding PDE Consistency into Distribution-Free Uncertainty Quantification for Neural Operators
+
+- **Authors:** Chin, Michael
+- **Link:** https://arxiv.org/abs/2609.11935
+
+> Neural operators such as the Fourier Neural Operator (FNO) achieve remarkable accuracy in approximating solutions to partial differential equations (PDEs). However, providing rigorous uncertainty estimates remains an open challenge. We propose Physics-Informed Conformal Prediction (PI-CP), a framework that embeds PDE residuals into the nonconformity score of split conformal prediction, producing p...
+
+
+### Paper 3 — Fed-Equilibrium Framework for Topological Pareto Control in Robust and Fair Clinical Federated Learning
+
+- **Authors:** Xu, Ting, Leung, Henry
+- **Link:** https://arxiv.org/abs/2609.11937
+
+> The deployment of Federated Learning (FL) in multi-center clinical networks faces the challenge of "knowledge dominance," where high-volume hubs naturally overwhelm minority community nodes, implicitly treating the distinct clinical patterns of smaller cohorts as outliers. Existing geometric defenses provide a security baseline but leave this efficiency-fairness dilemma unresolved. To bridge this...
