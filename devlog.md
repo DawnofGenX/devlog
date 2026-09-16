@@ -94,3 +94,29 @@
 - **Link:** https://arxiv.org/abs/2609.11937
 
 > The deployment of Federated Learning (FL) in multi-center clinical networks faces the challenge of "knowledge dominance," where high-volume hubs naturally overwhelm minority community nodes, implicitly treating the distinct clinical patterns of smaller cohorts as outliers. Existing geometric defenses provide a security baseline but leave this efficiency-fairness dilemma unresolved. To bridge this...
+
+## 2026-09-16
+
+
+### Paper 1 — Efficient AI Model Deployment Using Quantization Analysis Tool
+
+- **Authors:** Chenna, Dwith, Macherla, Kanishka
+- **Link:** https://arxiv.org/abs/2609.11954
+
+> As deep learning models are increasingly deployed on resource constrained devices, the demand for efficient model optimization techniques continues to grow. Effective deployment of AI models on edge and low power platforms requires optimization methods that reduce model size and computational cost while maintaining high accuracy. This paper presents Quantization Analysis Tool, a practical system d...
+
+
+### Paper 2 — Performance, Efficiency and Collapse -- Advantages and Challenges in Offline Post-training of Code LLMs
+
+- **Authors:** Anand, Abhinav, Pachika, Sanjana Reddy, Verma, Shweta, Mezini, Mira
+- **Link:** https://arxiv.org/abs/2609.11956
+
+> Post-training with reinforcement learning (RL) is a critical phase in the development of code-generating large language models (LLMs), as it ensures adherence to instructions and the production of functionally correct code. This process typically requires computationally intensive code sample generation from Transformer-based LLMs and substantial GPU-CPU communication for sequence verification. To...
+
+
+### Paper 3 — Look Before You Leap: Pre-Action Verification for LLM Agents
+
+- **Authors:** Althoubi, Asaad
+- **Link:** https://arxiv.org/abs/2609.11957
+
+> An LLM agent acts on the world by emitting actions: shell commands to run, edits to apply. A wrong action does not always fail loudly; it can fail silently, producing a plausible but incorrect effect that raises no error. We argue that a cheap deterministic check, run before an action takes effect, is an effective and underused form of agent oversight, and we study it across two action modalities...
