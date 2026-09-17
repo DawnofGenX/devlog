@@ -120,3 +120,29 @@
 - **Link:** https://arxiv.org/abs/2609.11957
 
 > An LLM agent acts on the world by emitting actions: shell commands to run, edits to apply. A wrong action does not always fail loudly; it can fail silently, producing a plausible but incorrect effect that raises no error. We argue that a cheap deterministic check, run before an action takes effect, is an effective and underused form of agent oversight, and we study it across two action modalities...
+
+## 2026-09-17
+
+
+### Paper 1 — Pay Only for Disagreement: Certified No-Regression Verdicts for Model Updates with Matching Label-Complexity Bounds
+
+- **Authors:** Balachandran, Vishnu Bindu
+- **Link:** https://arxiv.org/abs/2609.17560
+
+> Every production model is updated, by retraining, fine-tuning, quantization, or a silent vendor swap, and each update risks being worse than what it replaced. We formalize update promotion as certified paired risk-difference auditing. Our starting point is a support identity: the risk difference between two models lives on the inputs where they disagree, observable without labels. We build DISCERN...
+
+
+### Paper 2 — Beyond Static RAG: An Adaptive, Tri-Metric Routing Framework for Efficient Long-Context Inference on Commodity GPUs
+
+- **Authors:** Vabbilisetty, Saipraveen, Boddepalli, Ajay Kumar, Mishra, Deep Narayan, Kapadia, Shashank et al. (6 total)
+- **Link:** https://arxiv.org/abs/2609.17564
+
+> Deploying retrieval-augmented generation (RAG) on commodity GPUs such as the NVIDIA T4 (16 GB VRAM) exposes a practical failure mode we call the Compression Paradox: neural prompt compression can add key-value (KV) cache contention and preprocessing latency that outweigh generation-time savings, while skipping compression can cause out-of-memory (OOM) failures on long contexts. We identify two dis...
+
+
+### Paper 3 — Where Grokking Happens: Distributed Utility and Fourier Recoding Without a Module Switch
+
+- **Authors:** Yang, Dekun
+- **Link:** https://arxiv.org/abs/2609.17571
+
+> Where in a Transformer is the change from memorization to generalization functionally expressed? We introduce Transition Games--behavior-aligned exact activation games with paired non-generalizing controls--and find distributed utility gain with a prospective block-0 attention bias; selected degree-two modes account for 67--92% of its addition contrast across replacement games, and a disjoint exac...
