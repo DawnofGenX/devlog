@@ -146,3 +146,29 @@
 - **Link:** https://arxiv.org/abs/2609.17571
 
 > Where in a Transformer is the change from memorization to generalization functionally expressed? We introduce Transition Games--behavior-aligned exact activation games with paired non-generalizing controls--and find distributed utility gain with a prospective block-0 attention bias; selected degree-two modes account for 67--92% of its addition contrast across replacement games, and a disjoint exac...
+
+## 2026-09-18
+
+
+### Paper 1 — Generative Query Suggestion via Intent Coverage and Query-Level Credit Assignment
+
+- **Authors:** Liu, Xinpeng, Ma, Lu, Qiao, Jiayi, Zhou, Mengyu et al. (9 total)
+- **Link:** https://arxiv.org/abs/2609.19209
+
+> Generative query suggestion aims to enhance user engagement by anticipating user intents and recommending relevant follow-up queries. A central challenge is to generate slates whose individual queries are useful while the slate covers distinct intents. We propose an Intent-Driven Query Suggestion Framework with dual-stage optimization. First, intent-aware diversity modeling constructs intent-align...
+
+
+### Paper 2 — Layer-wise Curriculum Learning for Efficient LLM Compression
+
+- **Authors:** Lee, Donggeon, Na, Dooyeon, Oh, Seungmin, Ryu, Jongbin
+- **Link:** https://arxiv.org/abs/2609.19213
+
+> In this paper, we introduce layer-wise curriculum learning for efficient LLM compression. The proposed method facilitates the knowledge transfer from the teacher model to the student model, utilizing a curriculum learning approach that begins with easier optimization tasks and progressively tackles harder ones. In order to adopt the layer-wise learning in LLM compression, we partition the whole mo...
+
+
+### Paper 3 — Block Parallelism For Efficient Distributed Long-Context Diffusion Language Model Training
+
+- **Authors:** Suresh, Tarun, Chaturvedi, Pranshu, Kang, Hangoo, Shroff, Parth et al. (7 total)
+- **Link:** https://arxiv.org/abs/2609.19242
+
+> Block diffusion language models (BDLMs) combine autoregressive dependencies across blocks with parallel denoising within blocks, but long-context training is constrained by distributed attention communication and activation memory. Conventional context parallelism (CP) shards the combined clean-plus-corrupted sequence by position, communicating shared clean K/V together with block-specific corrupt...
