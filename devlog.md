@@ -172,3 +172,29 @@
 - **Link:** https://arxiv.org/abs/2609.19242
 
 > Block diffusion language models (BDLMs) combine autoregressive dependencies across blocks with parallel denoising within blocks, but long-context training is constrained by distributed attention communication and activation memory. Conventional context parallelism (CP) shards the combined clean-plus-corrupted sequence by position, communicating shared clean K/V together with block-specific corrupt...
+
+## 2026-09-19
+
+
+### Paper 1 — Embedding Models Measure in Peculiar Ways
+
+- **Authors:** Juri Opitz, Andrianos Michail
+- **Link:** http://arxiv.org/abs/2609.20821v1
+
+> Embedding spaces define notions of semantic similarity and distance. We study whether those embeddings reflect physical measurements of mass, distance, time and volume, which admit a unique, objective notion of semantic equivalence and distance. We find that physical measurement is only weakly modeled in the embedding space, and that instead quite peculiar measurement patterns can be observed. Fur...
+
+
+### Paper 2 — Paint-Anything: Unified Any-Color Control for Image Generation and Editing
+
+- **Authors:** Ji Xie, Dewei Zhou, Xinyu Huang, Zhennan Chen et al. (5 total)
+- **Link:** http://arxiv.org/abs/2609.20816v1
+
+> Professional design requires any-color control: the ability to specify an object's target color with any 24-bit hex value for image generation and editing. Prior work has explored color generation, editing, and colorization, but often relies on dedicated color representations or specialized inference procedures. Advances in large language models offer a simpler starting point: even compact models...
+
+
+### Paper 3 — How Does Distribution Shift Shape Pretraining Gains in Neural PDE Surrogates?
+
+- **Authors:** Pochinapeddi Sai Bhargav, Nithin Somasekharan, Rohit Sunil Kanchi, Sicheng He et al. (5 total)
+- **Link:** http://arxiv.org/abs/2609.20814v1
+
+> Pretraining a neural PDE surrogate can reduce the amount of new CFD data needed when geometry or modeled physics changes. However, it remains unclear how different components of distribution shift affect this benefit. We pretrain a surrogate on 254,909 RANS solutions from one airfoil family and fine-tune it on a new family under two target settings with matched freestream ranges: the same Spalart-...
