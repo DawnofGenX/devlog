@@ -198,3 +198,29 @@
 - **Link:** http://arxiv.org/abs/2609.20814v1
 
 > Pretraining a neural PDE surrogate can reduce the amount of new CFD data needed when geometry or modeled physics changes. However, it remains unclear how different components of distribution shift affect this benefit. We pretrain a surrogate on 254,909 RANS solutions from one airfoil family and fine-tune it on a new family under two target settings with matched freestream ranges: the same Spalart-...
+
+## 2026-09-20
+
+
+### Paper 1 — Quantifying Overclaiming Propensity in Frontier LLM Agents
+
+- **Authors:** Nolan Smyth, Yorguin-Jose Mantilla-Ramos, Pascal Jr Tikeng Notsawo, Saskia Helbling et al. (9 total)
+- **Link:** http://arxiv.org/abs/2609.20812v1
+
+> Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \emph{overclaim} task completion, a misrepresentation that can mislead the user. An agent overclaims when its final response contradicts information in its context. This definition r...
+
+
+### Paper 2 — Score Centering Stabilizes Off-policy Reinforcement Learning
+
+- **Authors:** Martin Marek, Max Ryabinin
+- **Link:** http://arxiv.org/abs/2609.20807v1
+
+> Reinforcement learning (RL) of large language models is notoriously sensitive to small differences between training and inference engines, often referred to as the training-inference mismatch (TIM). However, completely eliminating TIM is impractical, as it would come at a major cost to rollout efficiency. In this paper, we show that the instability of RL under TIM is primarily caused by drift: a p...
+
+
+### Paper 3 — An Empirical Study of Harness Design for Coding Agents
+
+- **Authors:** Run-Ze Fan, Zihao Zhang, Simin Ma, Yebowen Hu et al. (9 total)
+- **Link:** http://arxiv.org/abs/2609.20804v1
+
+> Coding harnesses shape how autonomous coding agents translate model capabilities into long-horizon software-engineering performance, yet existing work typically evaluates harnesses as monolithic systems, leaving the effectiveness of individual components unclear. To enable component-level comparisons, we study this question with a lightweight coding harness whose execution loop is fixed while thre...
