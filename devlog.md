@@ -224,3 +224,29 @@
 - **Link:** http://arxiv.org/abs/2609.20804v1
 
 > Coding harnesses shape how autonomous coding agents translate model capabilities into long-horizon software-engineering performance, yet existing work typically evaluates harnesses as monolithic systems, leaving the effectiveness of individual components unclear. To enable component-level comparisons, we study this question with a lightweight coding harness whose execution loop is fixed while thre...
+
+## 2026-09-21
+
+
+### Paper 1 — Sparse Priors for Efficient Distribution Learning
+
+- **Authors:** Goyal, Saumya, Póczos, Barnabás
+- **Link:** https://arxiv.org/abs/2609.20883
+
+> Despite the widespread use and success of generative AI techniques today, theoretical guarantees on learning a distribution supported in $d$ dimensions from $n$ samples degrade as $O(n^{-1/\Theta(d)})$, though shown to be minimax optimal. We hypothesize that present bounds are too pessimistic because smoothness assumptions are not enough to capture the structure of distributions that often appear...
+
+
+### Paper 2 — BI-Agent and BI-Bench: Towards Automating End-to-End Business Intelligence
+
+- **Authors:** Hu, Chuxuan, He, Yeye, Zhou, Penny, Tok, Wee Hyong et al. (6 total)
+- **Link:** https://arxiv.org/abs/2609.20886
+
+> Business intelligence (BI) is a cornerstone of enterprise decision-making and is widely used by enterprise users in software such as Power BI and Tableau. In traditional BI workflows, users need to prepare data by (1) identifying relevant tables, (2) performing data transformations, and (3) building join relationships, before they can (4) answer their business questions. These steps can be complex...
+
+
+### Paper 3 — Elastic Threshold Attention: Learned Contextual Sparsity for Long-Context Decoding
+
+- **Authors:** Haris, Themistoklis, Li, Henry, Karimzadehgan, Maryam
+- **Link:** https://arxiv.org/abs/2609.20888
+
+> Massive KV caches can cause severe memory-bandwidth bottlenecks during long-context decoding. Sparse attention methods mitigate this via selective loading, but that comes at a cost: rigid heuristics drop necessary context, leading to quality degradation. We introduce \textbf{Elastic Threshold Attention (ETA)}, an end-to-end trainable architecture that achieves hardware-accelerated decoding speed w...
