@@ -250,3 +250,29 @@
 - **Link:** https://arxiv.org/abs/2609.20888
 
 > Massive KV caches can cause severe memory-bandwidth bottlenecks during long-context decoding. Sparse attention methods mitigate this via selective loading, but that comes at a cost: rigid heuristics drop necessary context, leading to quality degradation. We introduce \textbf{Elastic Threshold Attention (ETA)}, an end-to-end trainable architecture that achieves hardware-accelerated decoding speed w...
+
+## 2026-09-22
+
+
+### Paper 1 — Agile-WAM: An Agile Tactile World Action Model for Contact-Rich Robot Control
+
+- **Authors:** Hanchu Zhou, Brendan Lynch, Raman Goyal, Dechen Gao et al. (7 total)
+- **Link:** http://arxiv.org/abs/2609.20761v1
+
+> World Action Models (WAMs) advance beyond conventional visuomotor policies by jointly predicting future world states and robot actions, enabling the policy to learn physical dynamics that support effective control. However, recent tactile WAMs often rely on large-scale pretrained generative backbones to capture contact-rich physical dynamics, which limit their inference efficiency and flexible dep...
+
+
+### Paper 2 — Prediction-Powered Smoothing and Validation for Disaggregated AI Evaluation
+
+- **Authors:** Sho Kawano, Zehang Richard Li, Paul A. Parker
+- **Link:** http://arxiv.org/abs/2609.20758v1
+
+> Evaluating an AI system requires disaggregated assessment, as performance varies across domains such as benchmark task types or conversation types in deployed agents. Exhaustive testing is expensive, so evaluation rests on a sample of labeled units. We treat the evaluation set as a finite population and seek accurate point and interval estimates of each domain mean. Direct estimators, including pr...
+
+
+### Paper 3 — OPTED: On-Policy Fine-Tuning for End-to-End Driving using a Render-Free Teacher
+
+- **Authors:** Damiano Da Col, Maximilian Igl, Peter Karkus, Kashyap Chitta et al. (8 total)
+- **Link:** http://arxiv.org/abs/2609.20756v1
+
+> As scaling pre-training data alone yields diminishing returns, post-training is becoming increasingly important across physical AI domains such as autonomous driving. End-to-end driving policies are pre-trained in open loop with behavior cloning on human demonstrations. However, compounding errors during closed-loop deployment can take the vehicle outside the training data distribution, increasing...
