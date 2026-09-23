@@ -276,3 +276,29 @@
 - **Link:** http://arxiv.org/abs/2609.20756v1
 
 > As scaling pre-training data alone yields diminishing returns, post-training is becoming increasingly important across physical AI domains such as autonomous driving. End-to-end driving policies are pre-trained in open loop with behavior cloning on human demonstrations. However, compounding errors during closed-loop deployment can take the vehicle outside the training data distribution, increasing...
+
+## 2026-09-23
+
+
+### Paper 1 — dQwen3.5: Hybrid-Attention Diffusion Language Models
+
+- **Authors:** Anton Xue, Litu Rout, Aditya Akella, Adam Klivans et al. (6 total)
+- **Link:** http://arxiv.org/abs/2609.20751v1
+
+> Adapting a pretrained autoregressive (AR) model is a cost-efficient route to a diffusion language model (DLM). While nearly all such adaptations start from a full-attention transformer, AR modeling has shifted toward hybrid architectures that interleave attention and RNN layers. This creates an obstacle for adaptation: unlike attention, RNNs are structurally causal and nontrivial to bidirectionali...
+
+
+### Paper 2 — MILER: Semantic Mid-Level Representation for Sim-to-Real Reinforcement Learning in Unstructured Autonomous Driving
+
+- **Authors:** Thomas Steinecker, Denis Trescher, Alexander Bienemann, Thorsten Luettel et al. (5 total)
+- **Link:** http://arxiv.org/abs/2609.20747v1
+
+> Reinforcement learning constitutes a promising approach owing to its potential for superhuman performance and self-learned policies. However, its application to real-world autonomous driving remains scarce, particularly in unstructured environments, because of the challenges associated with sim-to-real transfer for unstructured environments. In this work, we present MILER, an end-to-end policy fra...
+
+
+### Paper 3 — Video DeltaNet: A Video-Native Hybrid Attention for Livestream Video Generation
+
+- **Authors:** Haocheng Xi, Yiming Xie, Hexu Zhao, Yiwen Zhang et al. (11 total)
+- **Link:** http://arxiv.org/abs/2609.20744v1
+
+> Video diffusion models repeatedly process long spatiotemporal token sequences during denoising, making attention a major computational bottleneck. Linear attention offers an appealing alternative and has been widely adopted in recent large language models, but directly applying it to video models often fails to preserve the fine-grained interactions required for high-quality generation. We present...
