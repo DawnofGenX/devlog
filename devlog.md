@@ -302,3 +302,29 @@
 - **Link:** http://arxiv.org/abs/2609.20744v1
 
 > Video diffusion models repeatedly process long spatiotemporal token sequences during denoising, making attention a major computational bottleneck. Linear attention offers an appealing alternative and has been widely adopted in recent large language models, but directly applying it to video models often fails to preserve the fine-grained interactions required for high-quality generation. We present...
+
+## 2026-09-24
+
+
+### Paper 1 — The Drift Contract: Spectral Updates for Depth-Robust Local Learning
+
+- **Authors:** Polly, Fabien
+- **Link:** https://arxiv.org/abs/2609.26811
+
+> Local learning trains each layer with its own auxiliary loss and no global backward pass, which makes layer updates structurally parallel. Two problems have kept it marginal: accuracy degrades as depth grows, and hyperparameters are fragile. We apply Muon-style spectral update geometry (momentum orthogonalization with spectral step scaling) to per-layer local updates, an intersection not previousl...
+
+
+### Paper 2 — Signal2Symbol: Neuro-Symbolic Temporal Reasoning for Explainable Physiological Time-Series Anomaly Detection
+
+- **Authors:** Mansour, Naser, Benabderrahmane, Sidahmed, Rahwan, Ameer
+- **Link:** https://arxiv.org/abs/2609.26820
+
+> Physiological time series such as electrocardiograms (ECG) and electroencephalograms (EEG) exhibit complex temporal structure, substantial acquisition variability, and a strong need for transparent decision-making. Although deep models can achieve high detection performance, they often provide limited insight into why a segment is anomalous, how local anomalies relate over time, and whether a dete...
+
+
+### Paper 3 — HARN: Hierarchical Associative Resonance Network for Event-Driven Multi-Timeframe Forecasting
+
+- **Authors:** Saidd, Nabeel Ahmad
+- **Link:** https://arxiv.org/abs/2609.26822
+
+> Financial time series evolve across multiple temporal resolutions, challenging forecasting systems to incorporate newly available information without repeatedly recomputing unchanged representations. We introduce HARN, a Hierarchical Associative Resonance Network for event-driven multi-timeframe forecasting. HARN maintains persistent representations across temporal levels and updates each level on...
