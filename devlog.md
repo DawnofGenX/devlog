@@ -354,3 +354,29 @@
 - **Link:** https://arxiv.org/abs/2609.28558
 
 > CFD predictions of open tip clearance flow in compressor cascades are subject to discrepancies relative to experiments, while experimental observations are sparse and high-resolution experimental ground truth is unavailable. This study proposes a non-intrusive correction method based on a variational autoencoder (VAE) and latent-space adaptation. A VAE is first trained using a dataset of 166 param...
+
+## 2026-09-26
+
+
+### Paper 1 — Stable and Faithful Explanations for Knowledge Tracing
+
+- **Authors:** Padi, Praveena, Morampudi, Arun, Irrinki, Ujval Sai Gopal, Kakitapelli, Pradeep Kumar Dolabehera
+- **Link:** https://arxiv.org/abs/2609.28502
+
+> Knowledge tracing (KT) models predict student performance opaquely, limiting pedagogical action. This study contributes a validation protocol testing predictive competitiveness (RQ1), explanation stability (RQ2) and retraining-based faithfulness (RQ3) together. Thirteen behavioral features across five pedagogical themes were engineered from ASSISTments 2009 and 2012, with history features computed...
+
+
+### Paper 2 — SMILESGNN: Interpretable Clinical Toxicity Prediction via SMILES-Graph Cross-Attention Fusion
+
+- **Authors:** Nguyen, Quang Minh, Nguyen, Thuy Quynh, Le, Duc Minh, Nguyen, Ho Nhat Minh et al. (6 total)
+- **Link:** https://arxiv.org/abs/2609.28553
+
+> Drug toxicity prediction is critical for reducing late-stage attrition in drug discovery, yet remains challenging due to severe class imbalance, scaffold-based generalization, and the clinical need for interpretable predictions. Single-modality approaches-SMILES Transformers or graph neural networks capture complementary aspects of molecular structure, while sequence-only models cannot directly pr...
+
+
+### Paper 3 — CFD Correction of Open Tip Clearance Flow in a Compressor Cascade Using VAE Latent Space Adaptation
+
+- **Authors:** Zuo, Xiang, Deng, Hefang, Chen, Caiyan, He, Honglin et al. (7 total)
+- **Link:** https://arxiv.org/abs/2609.28558
+
+> CFD predictions of open tip clearance flow in compressor cascades are subject to discrepancies relative to experiments, while experimental observations are sparse and high-resolution experimental ground truth is unavailable. This study proposes a non-intrusive correction method based on a variational autoencoder (VAE) and latent-space adaptation. A VAE is first trained using a dataset of 166 param...
