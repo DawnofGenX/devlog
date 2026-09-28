@@ -380,3 +380,29 @@
 - **Link:** https://arxiv.org/abs/2609.28558
 
 > CFD predictions of open tip clearance flow in compressor cascades are subject to discrepancies relative to experiments, while experimental observations are sparse and high-resolution experimental ground truth is unavailable. This study proposes a non-intrusive correction method based on a variational autoencoder (VAE) and latent-space adaptation. A VAE is first trained using a dataset of 166 param...
+
+## 2026-09-28
+
+
+### Paper 1 — HybridInfer: Thermal-Aware Reinforcement-Learning Tier Routing for On-Device, Edge, and Cloud LLM Inference
+
+- **Authors:** Koul, Simran
+- **Link:** https://arxiv.org/abs/2609.30270
+
+> On-device inference with small language models keeps user data local, works offline, and incurs no per-query cost, so the on-device tier is preferred when it is adequate. It is thermally constrained, however, and I find the constraint is sharper than a slowdown: on a flagship Snapdragon device, sustained on-device generation destabilizes the GPU inference runtime, which crashes or silently wedges...
+
+
+### Paper 2 — When the Preconditioning Exponent Turns Negative: Learning-Rate Coupling and Cross-Environment Generalization
+
+- **Authors:** Zhang, Gongyue, Liu, Honghai
+- **Link:** https://arxiv.org/abs/2609.30271
+
+> Adaptive optimizers are commonly parameterized by a fixed power of the second-moment estimate. Existing partially adaptive methods study exponents between momentum-like updates and the standard Adam square root, while the interaction between this exponent and the global learning rate is less understood. We perform a controlled cross-environment study using a paired four-environment classification...
+
+
+### Paper 3 — ENAS: An Efficient Hardware-Aware Neural Architecture Search Framework for TinyML on Resource-Constrained Microcontrollers
+
+- **Authors:** Khan, Mohd Moin, Srivastava, Naman, Arjunan, Pandarasamy
+- **Link:** https://arxiv.org/abs/2609.30272
+
+> We present \textbf{ENAS}, a hardware-aware Neural Architecture Search (NAS) framework that combines a static feasibility check, a cell-based search space supporting standard, depthwise-separable, and bottleneck blocks with optional skip connections, and a three-stage hybrid search strategy (random $\rightarrow$ top-$K$ $\rightarrow$ mutation) with persistent cross-run caching. Unlike many existing...
