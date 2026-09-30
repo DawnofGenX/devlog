@@ -432,3 +432,29 @@
 - **Link:** https://arxiv.org/abs/2609.30272
 
 > We present \textbf{ENAS}, a hardware-aware Neural Architecture Search (NAS) framework that combines a static feasibility check, a cell-based search space supporting standard, depthwise-separable, and bottleneck blocks with optional skip connections, and a three-stage hybrid search strategy (random $\rightarrow$ top-$K$ $\rightarrow$ mutation) with persistent cross-run caching. Unlike many existing...
+
+## 2026-09-30
+
+
+### Paper 1 — Replay in the Silent Degrees of Freedom: Continual Learning Without an Offline Phase
+
+- **Authors:** Yanhai, Zhang
+- **Link:** https://arxiv.org/abs/2609.31630
+
+> Replay-based continual learning almost always consolidates in a dedicated offline phase or by interleaving replayed samples with the input stream, whereas brains also consolidate during wakefulness through local sleep, brief use-dependent off-periods of individual circuits. We ask whether a network trained by local, biologically constrained rules can consolidate with no offline phase at all. An is...
+
+
+### Paper 2 — OMP-MoE: Efficient Expert Pruning for Mixture-of-Experts LLMs via Orthogonal Matching Pursuit
+
+- **Authors:** Li, Dezhi, Li, Lujun, Zhu, Qiyuan, Gu, Hao et al. (7 total)
+- **Link:** https://arxiv.org/abs/2609.31631
+
+> Mixture-of-Experts (MoE) models enable efficient scaling of large language models but face critical deployment challenges due to massive memory requirements. Existing pruning methods either incur prohibitive search costs or neglect the dynamic interdependencies between experts. To address these challenges, we present OMP-MoE, a novel training-free compression framework for reducing expert redundan...
+
+
+### Paper 3 — EEGAgentBench: Benchmarking LLM Agents on Short- and Long-Horizon EEG Analysis
+
+- **Authors:** Wu, Huyu, Weng, Weining, Liu, Yuchen, Chen, Yiqiang et al. (5 total)
+- **Link:** https://arxiv.org/abs/2609.31632
+
+> Electroencephalography (EEG) analysis is evolving from short-segment classification toward long-horizon interpretation that demands iterative evidence accumulation, multi-step reasoning, and coordinated use of specialized signal-processing tools. Although large language models (LLMs) have recently shown promise as autonomous agents for EEG analysis, existing EEG agentic evaluations remain fragment...
