@@ -458,3 +458,29 @@
 - **Link:** https://arxiv.org/abs/2609.31632
 
 > Electroencephalography (EEG) analysis is evolving from short-segment classification toward long-horizon interpretation that demands iterative evidence accumulation, multi-step reasoning, and coordinated use of specialized signal-processing tools. Although large language models (LLMs) have recently shown promise as autonomous agents for EEG analysis, existing EEG agentic evaluations remain fragment...
+
+## 2026-10-01
+
+
+### Paper 1 — Ranking-Aware Prompt Optimization for Multimodal Clinical Diagnosis
+
+- **Authors:** Tian Xia, Minghao Liu, Yiqing Liang, Laixi Shi et al. (5 total)
+- **Link:** http://arxiv.org/abs/2609.40361v1
+
+> Multimodal large language models (MLLMs) are rapidly advancing clinical diagnosis, yet their adaptation pipelines remain anchored to accuracy-based objectives. Clinical data are heavily class-imbalanced: a constant-majority predictor can score above 90% accuracy while being clinically useless. We therefore evaluate and optimize for AUROC, a threshold-free score that ranks positives above negatives...
+
+
+### Paper 2 — Semifactual Credit-Augmented Policy Optimization
+
+- **Authors:** Junshu Pan, Zhizhang Fu, Shulin Huang, Yiran Ding et al. (8 total)
+- **Link:** http://arxiv.org/abs/2609.40360v1
+
+> Reinforcement learning with verifiable rewards (RLVR) has improved the reasoning capabilities of large language models (LLMs), yet their predictions remain sensitive to task-irrelevant prompt features. We investigate this sensitivity through semifactual prompt interventions that preserve the underlying problem and its answer. Our analysis reveals substantial variation in token-level sensitivity an...
+
+
+### Paper 3 — Removing Timing Shortcuts Improves Non-Invasive Brain-to-Text
+
+- **Authors:** Dulhan Jayalath, Oiwi Parker Jones
+- **Link:** http://arxiv.org/abs/2609.40359v1
+
+> We find that major reported improvements in decoding words from non-invasive brain recordings are largely reproducible without any brain data. In the influential work of d'Ascoli et al. (2025), time series of brain activity from subjects perceiving continuous speech are segmented into fixed-length windows starting at each word. A neural network then generates predictions for all of the words in a...
