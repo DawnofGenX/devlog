@@ -484,3 +484,29 @@
 - **Link:** http://arxiv.org/abs/2609.40359v1
 
 > We find that major reported improvements in decoding words from non-invasive brain recordings are largely reproducible without any brain data. In the influential work of d'Ascoli et al. (2025), time series of brain activity from subjects perceiving continuous speech are segmented into fixed-length windows starting at each word. A neural network then generates predictions for all of the words in a...
+
+## 2026-10-02
+
+
+### Paper 1 — Reverse Item Response Theory for Sparsity-Robust Ranking in Fragmented Cancer Drug-Response Matrices
+
+- **Authors:** Kang, Jung Min
+- **Link:** https://arxiv.org/abs/2610.00002
+
+> We introduce reverse Item Response Theory (IRT) to pharmacogenomic drug-response analysis by treating cancer types as latent "subjects" with resistance ability and drugs as "items" with evasion difficulty. Applied to 242,036 drug sensitivity measurements from the Genomics of Drug Sensitivity in Cancer (GDSC2) database, the model estimates cancer-type-level in-vitro resistance and drug-level broad...
+
+
+### Paper 2 — How Far is Adam from Natural Gradient Descent?
+
+- **Authors:** Paka-Hegde, Vihaan
+- **Link:** https://arxiv.org/abs/2610.00004
+
+> Adam is the standard optimizer in deep learning, yet its geometric relationship to natural gradient descent (NGD) contains unresolved questions. We study Adam's full update rule, including momentum, as a diagonal empirical Fisher approximation subject to diagonal truncation, empirical label substitution, and temporal lag. Using the scale-invariant $\gamma(\Delta\theta)$ metric, we measure Adam's g...
+
+
+### Paper 3 — FourierQK: Filter Shape, Admissibility and the Leakage-Coverage Law
+
+- **Authors:** Zeris, Athanasios
+- **Link:** https://arxiv.org/abs/2610.00009
+
+> Frequency-collapse attention [Zeris, 2026e] achieves large gains over standard dot-product attention by replacing the Q/K dot product with a bandpass-filtered inner product at a learned frequency. A natural follow-up question is: which filter shape works best, and why? We test five hypotheses about filter properties -- DC suppression, Nyquist suppression, bandwidth, centre frequency, and multi-sca...
