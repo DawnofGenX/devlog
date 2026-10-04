@@ -536,3 +536,29 @@
 - **Link:** http://arxiv.org/abs/2610.02201v1
 
 > High-resolution 3D generation increasingly relies on voxel latents and multi-stage pipelines that first predict active structure and then synthesize local geometry. While effective, this design fragments continuous surfaces into many local tokens, inflates generation cost, and often weakens topological consistency for thin or highly connected shapes. We introduce SILSA, a topology-aware 3D generat...
+
+## 2026-10-04
+
+
+### Paper 1 — One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars
+
+- **Authors:** Ramazan Fazylov, Stamatis Lefkimmiatis, Ivan Laptev
+- **Link:** http://arxiv.org/abs/2610.02207v1
+
+> 3D Gaussian avatars support fast rendering, however, their real-time animation is often challenged by the costly neural inference. We address this bottleneck and show that the animation of pretrained avatar models can be closely approximated by a linear combination of identity-independent blendshapes. Building on this finding, we introduce GALA (Gaussian Animation via Linear Approximation), a dist...
+
+
+### Paper 2 — Embedding Prediction Helps Image Generation
+
+- **Authors:** Sihan Xu, Ji Xie, Zilin Wang, Hui Shen et al. (5 total)
+- **Link:** http://arxiv.org/abs/2610.02203v1
+
+> In diffusion transformers, a class label or a text prompt is embedded once, and the same condition is reused at every denoising step. We ask whether predicted embeddings can serve as this condition instead. Next-Embedding Predictive Autoregression (NEPA) trains a Transformer to predict the next continuous embedding in a sequence. In generation, the clean image follows the noisy image, so its embed...
+
+
+### Paper 3 — SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation
+
+- **Authors:** Tianjiao Yu, Xinzhuo Li, Yifan Shen, Ying Shen et al. (7 total)
+- **Link:** http://arxiv.org/abs/2610.02201v1
+
+> High-resolution 3D generation increasingly relies on voxel latents and multi-stage pipelines that first predict active structure and then synthesize local geometry. While effective, this design fragments continuous surfaces into many local tokens, inflates generation cost, and often weakens topological consistency for thin or highly connected shapes. We introduce SILSA, a topology-aware 3D generat...
