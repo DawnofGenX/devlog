@@ -562,3 +562,29 @@
 - **Link:** http://arxiv.org/abs/2610.02201v1
 
 > High-resolution 3D generation increasingly relies on voxel latents and multi-stage pipelines that first predict active structure and then synthesize local geometry. While effective, this design fragments continuous surfaces into many local tokens, inflates generation cost, and often weakens topological consistency for thin or highly connected shapes. We introduce SILSA, a topology-aware 3D generat...
+
+## 2026-10-05
+
+
+### Paper 1 — What Should World Models Forget? Stratified Retention for Continual Adaptation
+
+- **Authors:** Nishit Anand, Ramani Duraiswami, Dinesh Manocha
+- **Link:** http://arxiv.org/abs/2610.03713v1
+
+> Continual learning treats degradation on previously seen data as evidence of failure, a convention inherited from settings with a stationary prediction target, where a correct label remains correct indefinitely. World models do not satisfy this condition. Their prediction target is the environment, which changes, so knowledge that was accurate when acquired may later become false, and discarding i...
+
+
+### Paper 2 — RNADyn: A Benchmark for Generating and Understanding RNA Dynamics
+
+- **Authors:** Yiming Huang, Lennart Bastian, Hanqun Cao, Luis Vollmers et al. (5 total)
+- **Link:** http://arxiv.org/abs/2610.03712v1
+
+> Ribonucleic acid (RNA) functions through conformational changes that are not fully captured by static structures. However, large-scale standardized RNA dynamics data remain limited, and existing approaches typically treat trajectory generation and dynamics understanding as separate objectives. Here, we introduce RNADynBench, a standardized RNA molecular dynamics (MD) benchmark with 2585 quality-co...
+
+
+### Paper 3 — From Mixing to Tearing: Graph Decomposition in Decentralized Optimization via Message Passing
+
+- **Authors:** Kuangyu Ding, Gesualdo Scutari
+- **Link:** http://arxiv.org/abs/2610.03709v1
+
+> We study the minimization of sums of smooth strongly convex functions over undirected graphs, with each function held by one agent and communication restricted to neighbors in the graph. Existing decentralized methods, whether based on gossip or on routing over spanning trees, typically use the network to mix or aggregate information to enable {\it prescribed} local optimization updates. What this...
