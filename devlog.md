@@ -588,3 +588,29 @@
 - **Link:** http://arxiv.org/abs/2610.03709v1
 
 > We study the minimization of sums of smooth strongly convex functions over undirected graphs, with each function held by one agent and communication restricted to neighbors in the graph. Existing decentralized methods, whether based on gossip or on routing over spanning trees, typically use the network to mix or aggregate information to enable {\it prescribed} local optimization updates. What this...
+
+## 2026-10-06
+
+
+### Paper 1 — Base Models Can Reason By Taking a Cue From Training Data
+
+- **Authors:** Sophie L. Wang, Amil Dravid, Rulin Shao, Kevin Farhat et al. (6 total)
+- **Link:** http://arxiv.org/abs/2610.06851v1
+
+> In this paper, we study how training data creates associations between the tokens at the start of a base model's response and the reasoning behavior that follows. First, we demonstrate that fixing particular starting token cues makes a base model's performance competitive with that of its reinforcement learning (RL)-trained counterparts on math and coding. For instance, the cue ".\n\nOkay" raises...
+
+
+### Paper 2 — Learning to Read the Contextual Tokens in Diffusion Transformers
+
+- **Authors:** Omer Dahary, Etai Sella, Hadar Averbuch-Elor, Daniel Cohen-Or et al. (5 total)
+- **Link:** http://arxiv.org/abs/2610.06844v1
+
+> Multimodal Diffusion Transformers (MM-DiTs) jointly process visual and textual representations throughout generation. These models repeatedly update the text tokens through multimodal attention, forming dynamic contextual tokens whose function is not well understood. In this work, we introduce a framework for reading this contextual space through natural-language interrogation. We train a lightwei...
+
+
+### Paper 3 — Direct Intermediate Initialization for Tilted Diffusion Samplers
+
+- **Authors:** Gregory D. Bellchambers
+- **Link:** http://arxiv.org/abs/2610.06834v1
+
+> Some diffusion posterior samplers construct Gaussian-tilted intermediate distributions along the reverse process. We observe that these targets can be pulled back to clean-space posteriors with weaker conditioning, with samples transported analytically to the corresponding noisy-space target through a Gaussian bridge. For the sequential Monte Carlo (SMC) sampler MCGDiff, the effective observation...
