@@ -614,3 +614,29 @@
 - **Link:** http://arxiv.org/abs/2610.06834v1
 
 > Some diffusion posterior samplers construct Gaussian-tilted intermediate distributions along the reverse process. We observe that these targets can be pulled back to clean-space posteriors with weaker conditioning, with samples transported analytically to the corresponding noisy-space target through a Gaussian bridge. For the sequential Monte Carlo (SMC) sampler MCGDiff, the effective observation...
+
+## 2026-10-07
+
+
+### Paper 1 — Bayes-Sufficient Compression Is Not Enough: How Does Communication Help Multi-Agent Systems?
+
+- **Authors:** Xie, Yi, Zhou, Zhanke, Fan, Yi, Ge, Yong et al. (6 total)
+- **Link:** https://arxiv.org/abs/2610.03769
+
+> Multi-agent LLM systems pair a sender with broad context and an executor with a limited local view. We study when a short message improves the executor's next decision, when raw context is preferable, and when a stronger sender helps. Our framework, \emph{receiver-relative bounded coordination}, expresses message utility as receiver gain minus protocol tax. Compression beats raw context when tax s...
+
+
+### Paper 2 — Least Squares for Time Series Forecasting
+
+- **Authors:** Ciang, Weiu-qiou, Hong, Yuzhou, Chen, Sherry
+- **Link:** https://arxiv.org/abs/2610.03812
+
+> A time-series forecast is scored on a future value of the series. A representation loss that regresses the next latent, as in LeNEPA, is a different least-squares problem on the same bottleneck. We write both programs down. The forecast program minimizes the error of a decoded latent on the coordinate that will be reported. For a scalar target and a linear decoder, every latent rank of at least on...
+
+
+### Paper 3 — Memory-State Critic for Asymmetric Actor-Critic with Application to Vision-Based Pursuit-Evasion
+
+- **Authors:** Louette, Arthur, Roncero, Alejandro Sánchez, Lambrechts, Gaspard, Leroy, Pascal et al. (7 total)
+- **Link:** https://arxiv.org/abs/2610.03830
+
+> In partially observable Markov decision processes, the optimal policy generally depends on the history of observations and past actions. Asymmetric actor-critic methods have become popular to learn such policies when additional information, such as the true state of the environment, is available during training. The critic, which is not needed at execution, is given access to the state. A critic c...
