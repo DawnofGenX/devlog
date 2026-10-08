@@ -640,3 +640,29 @@
 - **Link:** https://arxiv.org/abs/2610.03830
 
 > In partially observable Markov decision processes, the optimal policy generally depends on the history of observations and past actions. Asymmetric actor-critic methods have become popular to learn such policies when additional information, such as the true state of the environment, is available during training. The critic, which is not needed at execution, is given access to the state. A critic c...
+
+## 2026-10-08
+
+
+### Paper 1 — Decoupling Exploration from Optimization in RLVR
+
+- **Authors:** Saif Punjwani, Micah Goldblum
+- **Link:** http://arxiv.org/abs/2610.10536v1
+
+> Modern language models undergo reinforcement learning with verifiable rewards (RLVR) on top of already-trained checkpoints. A key promise of RLVR is the discovery of new reasoning strategies. In principle, a model can sample novel ideas absent from its prior training data. In practice, however, augmenting RLVR with strong novelty incentives has seen limited success and can degrade model quality. B...
+
+
+### Paper 2 — Decentralized SGD under Heavy-Tailed Noise: Optimal Convergence Rates and the Role of Gradient Clipping
+
+- **Authors:** Aleksandar Armacki, Haoyuan Cai, Ali H. Sayed
+- **Link:** http://arxiv.org/abs/2610.10527v1
+
+> Heavy-tailed noise has been widely observed in modern machine learning, motivating the use of methods like gradient clipping and normalization. While these methods are well understood in centralized settings, much less is known in decentralized ones, where applying a nonlinearity to local gradients affects both optimization and consensus. Recent works on decentralized non-convex optimization have...
+
+
+### Paper 3 — Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models
+
+- **Authors:** Mikey Watts, Yuchen Cui
+- **Link:** http://arxiv.org/abs/2610.10526v1
+
+> Vision-language-action models (VLAs) are strikingly sensitive to instruction phrasing and do not inherit the language robustness of the vision-language models they are built on. A one-word edit can move success by tens of points: $π_{0.5}$ turns on a LIBERO stove 100% of the time for "switch on the stove" and 2% for "switch on the hot plate", and a $π_0$ checkpoint finetuned with rephrase augmenta...
