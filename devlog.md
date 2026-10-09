@@ -666,3 +666,29 @@
 - **Link:** http://arxiv.org/abs/2610.10526v1
 
 > Vision-language-action models (VLAs) are strikingly sensitive to instruction phrasing and do not inherit the language robustness of the vision-language models they are built on. A one-word edit can move success by tens of points: $π_{0.5}$ turns on a LIBERO stove 100% of the time for "switch on the stove" and 2% for "switch on the hot plate", and a $π_0$ checkpoint finetuned with rephrase augmenta...
+
+## 2026-10-09
+
+
+### Paper 1 — CSF: Contextual Safety Filtering for Motion Generators
+
+- **Authors:** Lizhi Yang, Yiling Hou, Yao Tang, Junheng Li et al. (7 total)
+- **Link:** http://arxiv.org/abs/2610.12467v1
+
+> Text-conditioned motion generators produce trackable whole-body motion, but they have no notion of scene-dependent safety: the same action may target an object or a person. Existing safeguards either inspect the prompt, require labeled motion data, or enforce geometric constraints; therefore, they do not directly account for how scene context changes a motion's meaning. We introduce contextual saf...
+
+
+### Paper 2 — A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control
+
+- **Authors:** Octi Zhang, Mateo Guaman Castro, Patrick Yin, Ignacio Dagnino et al. (7 total)
+- **Link:** http://arxiv.org/abs/2610.12465v1
+
+> General-purpose robots must perform a wide range of tasks from agile locomotion to dexterous manipulation. While sim-to-real reinforcement learning (RL) has proven to be a useful tool for this goal, current RL pipelines depend on engineering-heavy, per-task structural priors such as shaped rewards and demonstrations. Recent work has shown that diverse simulator resets, combined with massively para...
+
+
+### Paper 3 — One Block, Multiple Depths: Recurrent Vision Transformers with Depth-Programmed Experts
+
+- **Authors:** Adrian Bulat, Yassine Ouali, Georgios Tzimiropoulos
+- **Link:** http://arxiv.org/abs/2610.12448v1
+
+> In this work, we show that a single Transformer block, applied recurrently, can match the accuracy of a full-depth vision encoder at comparable inference FLOPs without intermediate feature distillation. reViT restores depth-specific transformations by representing the FFN at each recurrent depth as a convex combination of a small shared expert bank. A continuous normalized-depth coordinate program...
