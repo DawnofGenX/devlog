@@ -770,3 +770,29 @@
 - **Link:** http://arxiv.org/abs/2610.13928v1
 
 > Capability evaluations aim to surface dangerous model behaviors before deployment, but their reliability depends on the assumption that hidden capabilities can be elicited. We show this assumption does not hold under adversarial conditions by constructing backdoor attacks that embed encrypted neural networks within host model weights, decrypting and executing them only upon receiving a secret trig...
+
+## 2026-10-13
+
+
+### Paper 1 — Hide and Seek: HIDE Concepts to SEEK explanations for black box models
+
+- **Authors:** Bhanu Tokas, Rahul Nair, Rockwell Jackson, Hannah Kerner
+- **Link:** http://arxiv.org/abs/2610.13935v1
+
+> Interpreting machine learning model predictions is a central challenge, particularly for black-box vision models. Concept-based attribution methods interpret models using human-understandable concepts. Existing concept-based methods can only interpret classification and regression models. They require access to model weights or large concept-annotated datasets, and most methods cannot provide imag...
+
+
+### Paper 2 — Constructive Bounds for the Topological Expressivity of Neural Networks
+
+- **Authors:** Kosio Beshkov
+- **Link:** http://arxiv.org/abs/2610.13931v1
+
+> The expressivity of a neural network $Φ$ describes the class of functions that a network can express. The term topological expressivity refers to a family of measures particularly suited to understand binary classification and is often formulated in terms of the Betti numbers of a decision boundary $β(Φ^{-1}(0))$. Despite its popularity, this measure is not as useful for regression and other probl...
+
+
+### Paper 3 — AI Models Can Provably Hide Arbitrary Capabilities
+
+- **Authors:** Andis Draguns, Sumeet Ramesh Motwani, Raymond Douglas, Christian Schroeder de Witt
+- **Link:** http://arxiv.org/abs/2610.13928v1
+
+> Capability evaluations aim to surface dangerous model behaviors before deployment, but their reliability depends on the assumption that hidden capabilities can be elicited. We show this assumption does not hold under adversarial conditions by constructing backdoor attacks that embed encrypted neural networks within host model weights, decrypting and executing them only upon receiving a secret trig...
