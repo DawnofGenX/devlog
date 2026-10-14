@@ -796,3 +796,29 @@
 - **Link:** http://arxiv.org/abs/2610.13928v1
 
 > Capability evaluations aim to surface dangerous model behaviors before deployment, but their reliability depends on the assumption that hidden capabilities can be elicited. We show this assumption does not hold under adversarial conditions by constructing backdoor attacks that embed encrypted neural networks within host model weights, decrypting and executing them only upon receiving a secret trig...
+
+## 2026-10-14
+
+
+### Paper 1 — Cepheid: Decoupling Scale from Structure for Cross-Family Motion Completion
+
+- **Authors:** Chih-Hai Su, Tsung-Wei Ke, Yu-Lun Liu
+- **Link:** http://arxiv.org/abs/2610.18871v1
+
+> Sparse-to-dense motion completion recovers dense mesh motion from sparse vertex displacements. Residual priors trained on one geometry family frequently fail to beat parameter-free harmonic extension off-family. Moreover, cross-family training meets a scaling barrier: residual amplitude varies by more than an order of magnitude across geometry families and collapses as observations become denser....
+
+
+### Paper 2 — What Matters in Quality-Aware VLA Pretraining: A Benchmark and Empirical Study
+
+- **Authors:** Mingxuan Yan, Litian Gong, Dihong Huang, Zhixu Li et al. (22 total)
+- **Link:** http://arxiv.org/abs/2610.18869v1
+
+> How should demonstration quality be used during vision-language-action (VLA) pretraining to improve performance after target-task fine-tuning? We compare weighting, filtering, and conditioning across reward definitions and label granularities using 5,000 naturally suboptimal human demonstrations and 24 target tasks. Within each VLA, we match demonstrations and training budgets. Additional comparis...
+
+
+### Paper 3 — Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards
+
+- **Authors:** Wenbo Hu, Shraman Pramanick, Krishna Kumar Singh, Nanyun Peng et al. (6 total)
+- **Link:** http://arxiv.org/abs/2610.18868v1
+
+> Long-horizon agents have drawn growing attention for their ability to work autonomously -- from hours to days -- on economically valuable tasks, a capability essential to automated discovery and recursive self-improvement (RSI). Yet open-source models still struggle on long-horizon tasks, largely for lack of both training data and a working recipe, and scaling both is hard: long, complex tasks are...
