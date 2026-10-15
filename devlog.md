@@ -822,3 +822,29 @@
 - **Link:** http://arxiv.org/abs/2610.18868v1
 
 > Long-horizon agents have drawn growing attention for their ability to work autonomously -- from hours to days -- on economically valuable tasks, a capability essential to automated discovery and recursive self-improvement (RSI). Yet open-source models still struggle on long-horizon tasks, largely for lack of both training data and a working recipe, and scaling both is hard: long, complex tasks are...
+
+## 2026-10-15
+
+
+### Paper 1 — MDN-VJEPA: Multimodal Probabilistic Joint-Embedding World Models
+
+- **Authors:** Huang, Yongchao
+- **Link:** https://arxiv.org/abs/2610.13956
+
+> Joint-Embedding Predictive Architectures (JEPAs) learn world models by predicting future representations rather than reconstructing observations. Variational JEPA (VJEPA) gives this prediction probabilistic semantics and permits flexible conditional predictive families. We propose MDN-VJEPA, a multimodal probabilistic JEPA that instantiates the latent predictor as a mixture density network (MDN),...
+
+
+### Paper 2 — LACRM: LLM-Guided Mining of Directed Advertiser Competition Relationships in E-Commerce Advertising
+
+- **Authors:** Shi, Xiang, Kou, Yitian, Li, Bing, Niu, Shengsheng et al. (9 total)
+- **Link:** https://arxiv.org/abs/2610.13959
+
+> In e-commerce advertising, ad platforms typically fail to model the externalities among advertisers when making optimization decisions: an advertiser's actual performance is largely shaped by rivals competing for the same users; these rivals typically operate in overlapping product categories and at comparable budget scales. However, capturing this rivalry as an explicit, reusable signal is challe...
+
+
+### Paper 3 — MRFlow: Mechanism-Structured Residual Flow Matching for Virtual Cell Perturbation Prediction
+
+- **Authors:** Yang, Haojie, Su, Ran
+- **Link:** https://arxiv.org/abs/2610.13966
+
+> Predicting cellular responses to chemical and genetic perturbations is a central test for AI virtual cells, yet many single-cell models reduce each condition to an average expression shift. This target is misaligned with perturbation biology: rare states, resistant subpopulations, and context-dependent effect sizes may coexist under the same intervention. MRFlow treats virtual-cell prediction as c...
