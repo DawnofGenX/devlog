@@ -848,3 +848,29 @@
 - **Link:** https://arxiv.org/abs/2610.13966
 
 > Predicting cellular responses to chemical and genetic perturbations is a central test for AI virtual cells, yet many single-cell models reduce each condition to an average expression shift. This target is misaligned with perturbation biology: rare states, resistant subpopulations, and context-dependent effect sizes may coexist under the same intervention. MRFlow treats virtual-cell prediction as c...
+
+## 2026-10-16
+
+
+### Paper 1 — Lotus: Learning to Understand Time-series by Learning to Forecast
+
+- **Authors:** Do, Van Dai, Nguyen, Huu Hiep, Nguyen, Minh Hoang, Nguyen, Manh et al. (5 total)
+- **Link:** https://arxiv.org/abs/2610.18877
+
+> Time-series language models typically align numerical signals with language using labels, captions, or question-answer pairs. Although such supervision encourages linguistic representations, it does not explicitly require them to preserve information about how the underlying time-series signal evolves. We introduce forecast grounding, a pretraining principle that requires language-aligned time-ser...
+
+
+### Paper 2 — Inverse Reasoning Models for Efficient Post-Training and Verification from Answer-Only Data
+
+- **Authors:** Korman, Eric O.
+- **Link:** https://arxiv.org/abs/2610.18878
+
+> Post-training reasoning LLMs often requires making a tradeoff between costly supervision and compute inefficiency: supervised finetuning typically requires reasoning traces, which is data inefficient since in many applications one only has prompt-answer tuples and lacks the groundtruth chain-of-thought (CoT) sequence. On the other hand, reinforcement learning (with verifiable rewards, for example)...
+
+
+### Paper 3 — Do Vision CIL Methods Transfer to Protein? A Diagnostic Benchmark of Frozen Protein Encoders
+
+- **Authors:** Gao, Ziyuan
+- **Link:** https://arxiv.org/abs/2610.18879
+
+> Protein function annotation operates over an expanding label space, making class-incremental learning (CIL) a natural framework for incorporating newly discovered functions without full retraining. Yet existing CIL methods have been developed largely in vision and have not been systematically evaluated over frozen protein representations. We conduct a controlled benchmark of nine representative CI...
