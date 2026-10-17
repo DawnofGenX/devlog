@@ -874,3 +874,29 @@
 - **Link:** https://arxiv.org/abs/2610.18879
 
 > Protein function annotation operates over an expanding label space, making class-incremental learning (CIL) a natural framework for incorporating newly discovered functions without full retraining. Yet existing CIL methods have been developed largely in vision and have not been systematically evaluated over frozen protein representations. We conduct a controlled benchmark of nine representative CI...
+
+## 2026-10-17
+
+
+### Paper 1 — LIBERO-PeRM: Benchmarking Personalized Robotic Manipulation
+
+- **Authors:** Zhixu Li, Keqian Tang, Litian Gong, Jingyu Yao et al. (10 total)
+- **Link:** http://arxiv.org/abs/2610.22372v1
+
+> Personalization is essential for general-purpose robots to transition into household environments and achieve true practicality. While general robotic manipulation has been extensively studied, personalized robotic manipulation (PeRM) lacks a controlled benchmark for separating task completion from preference satisfaction. We introduce LIBERO-PeRM, a benchmark for preference learning in embodied a...
+
+
+### Paper 2 — PathFM: Fast Generative Forecasting of Multivariate Trajectories
+
+- **Authors:** Jiachen Yao, Xiyuan Zhang, Annan Yu, Boran Han et al. (8 total)
+- **Link:** http://arxiv.org/abs/2610.22358v1
+
+> Time series foundation models are becoming increasingly popular for general-purpose forecasting. However, most leading models predict marginal quantiles, leaving the dependence structure of future trajectories unspecified. This distinction matters for trajectory-dependent quantities such as cumulative demand, peak load, and event timing, yet point and marginal scores do not reveal it. To model thi...
+
+
+### Paper 3 — Rethinking Routing Exploration in Modern Mixture-of-Experts
+
+- **Authors:** Bingcong Li, Hao Ma, Michael Muehlebach, Niao He et al. (5 total)
+- **Link:** http://arxiv.org/abs/2610.22353v1
+
+> Mixture-of-experts (MoE) models have become an important approach for scaling model parameters. Modern MoE architectures increasingly combine two design choices: fine-grained expert segmentation and shared experts. The former increases expressiveness by enabling more expert combinations at a fixed activation ratio, and the latter introduces experts that are active for every token. We identify an e...
