@@ -926,3 +926,29 @@
 - **Link:** http://arxiv.org/abs/2610.22353v1
 
 > Mixture-of-experts (MoE) models have become an important approach for scaling model parameters. Modern MoE architectures increasingly combine two design choices: fine-grained expert segmentation and shared experts. The former increases expressiveness by enabling more expert combinations at a fixed activation ratio, and the latter introduces experts that are active for every token. We identify an e...
+
+## 2026-10-19
+
+
+### Paper 1 — Behavioral Couplings: From Formation to Behavioral Emergence in Language Models
+
+- **Authors:** Dongyoon Hahm, Woogyeol Jin, Dennis Wei, Yi Zhou et al. (6 total)
+- **Link:** http://arxiv.org/abs/2610.23847v1
+
+> Fine-tuning large language models (LLMs) can induce behaviors beyond those explicitly targeted. For example, training a model to respond more warmly can make it more sycophantic, and training it to write insecure code can cause broad misalignment on prompts unrelated to coding. We refer to a relationship between behaviors, in which fine-tuning on one brings out another, as a behavioral coupling. I...
+
+
+### Paper 2 — Task-aligned spectral inductive biases in parameterized quantum circuits
+
+- **Authors:** Felix Frohnert, Adrián Pérez-Salinas, Sebastian Lange, Marcus Schwaebisch et al. (6 total)
+- **Link:** http://arxiv.org/abs/2610.23834v1
+
+> Parameterized quantum circuits are widely investigated in quantum machine learning, yet how their architecture can provide task-aligned inductive biases remains poorly understood. We study data reuploading quantum circuits with two distinct inputs: a signal that varies between samples and a fixed, task-defined spectral query that specifies how the signal should be probed. We show that encoding the...
+
+
+### Paper 3 — Beyond the Answer: Student-Conditioned Trace Construction for Reasoning Distillation
+
+- **Authors:** Shaoang Li, Yanhang Shi, Yufei Li, Mingfu Liang et al. (9 total)
+- **Link:** http://arxiv.org/abs/2610.23831v1
+
+> A reasoning trace can accompany a correct answer without providing effective supervision for a particular student. We study how to construct traces that improve learning beyond answer-only supervision by considering both their intermediate content and their accessibility to the target learner. We introduce ReDiST, a student-conditioned trace-construction and distillation framework for evidence-ric...
