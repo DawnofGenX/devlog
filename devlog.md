@@ -952,3 +952,29 @@
 - **Link:** http://arxiv.org/abs/2610.23831v1
 
 > A reasoning trace can accompany a correct answer without providing effective supervision for a particular student. We study how to construct traces that improve learning beyond answer-only supervision by considering both their intermediate content and their accessibility to the target learner. We introduce ReDiST, a student-conditioned trace-construction and distillation framework for evidence-ric...
+
+## 2026-10-20
+
+
+### Paper 1 — Web Agent Agentic Reinforcement Learning Decision Model Under Multi-Cost and Failure Risk
+
+- **Authors:** Ma, Qianli, Yue, Limengxi, Xu, Shuyang, Shi, Yanpei et al. (5 total)
+- **Link:** https://arxiv.org/abs/2610.23857
+
+> Intelligent agent interactions in real-world web environments are commonly constrained by request budgets, time delays, anti-crawling restrictions, and operational failure risks. Strategies solely optimizing task success rates often exhibit unusable phenomena such as "high success but high cost" or "low risk but conservative failure." This paper proposes a constrained agentic reinforcement learnin...
+
+
+### Paper 2 — PolyGraph: Plan-Buffered CUDA Graphs for Adaptive Speculative Decoding
+
+- **Authors:** Yang, Junchao
+- **Link:** https://arxiv.org/abs/2610.23861
+
+> Adaptive speculative decoding changes the active batch size B and draft length d from one decode step to the next, whereas a CUDA Graph replays a fixed launch configuration. The resulting verification width M = B d forces serving systems to pre-capture many shapes, capture new ones on the serving path, or pad every step to the largest draft. We present PolyGraph, a plan-buffer mechanism for custom...
+
+
+### Paper 3 — Forecasting Patient Trajectories from the Electronic Health Records with Action-Conditioned World Models
+
+- **Authors:** Lee, Simon A., Sha, Jiahang Hank, Chung, Soomin, Akamatsu, Kai et al. (6 total)
+- **Link:** https://arxiv.org/abs/2610.23862
+
+> We introduce a predictive world model for electronic health records (EHR) that represents patient histories as action conditioned latent trajectories. Rather than modeling clinical events solely through autoregressive token prediction, our framework explicitly separates patient states from observed clinical actions and learns their evolution through a state and action conditioned transition operat...
