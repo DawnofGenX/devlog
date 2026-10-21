@@ -978,3 +978,29 @@
 - **Link:** https://arxiv.org/abs/2610.23862
 
 > We introduce a predictive world model for electronic health records (EHR) that represents patient histories as action conditioned latent trajectories. Rather than modeling clinical events solely through autoregressive token prediction, our framework explicitly separates patient states from observed clinical actions and learns their evolution through a state and action conditioned transition operat...
+
+## 2026-10-21
+
+
+### Paper 1 — Joints, Camera, Action! Co-Generating 3D Motion and Video for Arbitrary Rigs
+
+- **Authors:** Noam Rotstein, Yoad Tewel, Chen Tessler, Haggai Maron et al. (8 total)
+- **Link:** http://arxiv.org/abs/2610.28632v1
+
+> Video generation models can now depict remarkably realistic motion. Yet it is unclear how to use this motion beyond pixels: to animate a specific 3D asset and replay the animation in its 3D scene. For instance, a video model can show a monkey jumping over a crossbar, but it cannot return that jump as replayable 3D motion placed in the 3D scene. Here we present a model that directly co-generates th...
+
+
+### Paper 2 — Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking
+
+- **Authors:** Yuxuan Kuang, Jiashun Wang, Yixuan Sun, Yufei Ye et al. (8 total)
+- **Link:** http://arxiv.org/abs/2610.28628v1
+
+> Dexterous multi-finger hands hold promise to unlock diverse skills like functional grasps, in-hand reorientation, and dynamic handover that the human-designed world assumes, yet existing learning recipes force a trade-off. Goal-reaching reinforcement learning generalizes to arbitrary object poses but, lacking any human prior, converges to unnatural and unreliable finger strategies; motion tracking...
+
+
+### Paper 3 — Planning under Noise with Neural Operators
+
+- **Authors:** Michael Chen, Hong Chul Nam, Xi Deng, Anima Anandkumar
+- **Link:** http://arxiv.org/abs/2610.28623v1
+
+> Planning under uncertain control execution noise requires reliable feedback policies across diverse environments. We introduce Planning Under Noise (PUN), a neural operator that learns noise-aware value fields for planning in unseen geometries. Building on an established screened-Poisson formulation of stochastic optimal control, we address two challenges: specifying boundary conditions that suppo...
