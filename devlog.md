@@ -1004,3 +1004,29 @@
 - **Link:** http://arxiv.org/abs/2610.28623v1
 
 > Planning under uncertain control execution noise requires reliable feedback policies across diverse environments. We introduce Planning Under Noise (PUN), a neural operator that learns noise-aware value fields for planning in unseen geometries. Building on an established screened-Poisson formulation of stochastic optimal control, we address two challenges: specifying boundary conditions that suppo...
+
+## 2026-10-22
+
+
+### Paper 1 — LongZero: Enhancing Long-Context Reasoning in LLMs from Zero Data
+
+- **Authors:** Zhennan Wan, Jianfei Chen
+- **Link:** http://arxiv.org/abs/2610.30132v1
+
+> Reinforcement learning (RL) is an effective way to strengthen the long-context reasoning of large language models (LLMs), but it needs training data that are long, diverse, challenging, and verifiable. Human annotation of such data is expensive, naturally occurring data are too scarce to sustain RL, and existing synthesis methods depend on external corpora or stronger teacher models, which become...
+
+
+### Paper 2 — Think Harder Where It Matters: Item-Level Adaptive Recursion for Sequential Recommendation
+
+- **Authors:** Zhanshuo Cao, Jiakai Tang, Yuqi Zhou, Sunhao Dai et al. (5 total)
+- **Link:** http://arxiv.org/abs/2610.30128v1
+
+> Existing sequential recommenders usually allocate a fixed computational budget to every item in a user's interaction history, regardless of the item's contribution to the final prediction. We challenge this de facto design with two diagnostic findings. (1) Non-uniform computational need: items within the same sequence vary drastically in how much computation they require. Most converge after shall...
+
+
+### Paper 3 — A Quasipolynomial Algorithm for $\ell_\infty$ Contractions
+
+- **Authors:** Ashkan Soleymani, Gabriele Farina
+- **Link:** http://arxiv.org/abs/2610.30122v1
+
+> We give an algorithm for computing an $\eps$-approximate fixed point of any $d$-dimensional nonexpansion with respect to the $\ell_\infty$ norm in time $\log(1/\eps)^{O(\log^2 d)}$. At its core, our method uses a boosting argument to geometrically shrink a search region. Among other consequences, our algorithm implies that simple stochastic games can be solved in quasipolynomial time.
