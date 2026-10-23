@@ -1030,3 +1030,29 @@
 - **Link:** http://arxiv.org/abs/2610.30122v1
 
 > We give an algorithm for computing an $\eps$-approximate fixed point of any $d$-dimensional nonexpansion with respect to the $\ell_\infty$ norm in time $\log(1/\eps)^{O(\log^2 d)}$. At its core, our method uses a boosting argument to geometrically shrink a search region. Among other consequences, our algorithm implies that simple stochastic games can be solved in quasipolynomial time.
+
+## 2026-10-23
+
+
+### Paper 1 — Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success
+
+- **Authors:** Yunfei Xie, Howard H. Qian, Shiyi Lan, Kaiyu Hang et al. (5 total)
+- **Link:** http://arxiv.org/abs/2610.31670v1
+
+> Robotic foundation models are typically evaluated through costly closed-loop rollouts, which motivates cheap offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, different modalities such as vision and language converge toward a shared statistical model of reality. We ask whether motion trajectories form another such modality:...
+
+
+### Paper 2 — Phase Transition from Random Features to Fully Trainable Networks
+
+- **Authors:** Xin He, Huan Lao, Xiliang Lu, Shijun Zhang
+- **Link:** http://arxiv.org/abs/2610.31663v1
+
+> Constructing accurate and computationally tractable approximation spaces is a fundamental task in scientific computing. Partially trainable neural networks bridge fixed random features and fully adaptive representations. This paper quantifies a phase transition pattern in approximation bounds and observes analogous behavior in training errors: a rapid but smooth initial improvement followed by dim...
+
+
+### Paper 3 — Reliable AI-Assisted Decisions via Selective Auditing
+
+- **Authors:** Isaac Gibbs, Elise L. Han, Ryan J. Tibshirani, Tijana Zrnic
+- **Link:** http://arxiv.org/abs/2610.31662v1
+
+> We consider online monitoring of an AI system that produces a sequence of decisions. At each round, the system outputs a proposed decision together with a confidence score estimating the trustworthiness of the decision. The decision and confidence score need not be produced by the same model: for example, one agent may propose a decision, while a separate verifier agent evaluates it and outputs a...
