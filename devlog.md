@@ -1056,3 +1056,29 @@
 - **Link:** http://arxiv.org/abs/2610.31662v1
 
 > We consider online monitoring of an AI system that produces a sequence of decisions. At each round, the system outputs a proposed decision together with a confidence score estimating the trustworthiness of the decision. The decision and confidence score need not be produced by the same model: for example, one agent may propose a decision, while a separate verifier agent evaluates it and outputs a...
+
+## 2026-10-24
+
+
+### Paper 1 — MoEZip: Routing-Aware KV Cache Compression for Sparse Mixture-of-Experts LLMs
+
+- **Authors:** Kim, Minsang, Baek, Seungjun
+- **Link:** https://arxiv.org/abs/2610.30206
+
+> Mixture-of-Experts (MoE) language models scale model capacity efficiently by activating a small subset of parameters per token. However, in long-context inference, memory remains a major bottleneck because the KV cache grows linearly with sequence length. Existing KV cache compression methods reduce this cost for dense transformers, but overlook a problem specific to MoE: KV eviction can change wh...
+
+
+### Paper 2 — Spectral Uncertainty Decomposition for Sparse Bayesian Learning
+
+- **Authors:** Huseynov, Ismail, Haufe, Stefan
+- **Link:** https://arxiv.org/abs/2610.30207
+
+> Estimating distributed neural sources from M/EEG measurements is an ill-posed inverse problem where principled uncertainty quantification remains challenging. The usual conditional Gaussian posterior covariance does not explicitly distinguish uncertainty along likelihood-visible source directions from uncertainty that is invisible to the measurements. We propose a spectral framework based on the s...
+
+
+### Paper 3 — Prediction Is Not Calibration: Item Parameter Recovery and Representation Coupling in Knowledge Tracing
+
+- **Authors:** Yuan, Wenrui, Berg, Stéphanie M. van den, Steinrücke, Johannes
+- **Link:** https://arxiv.org/abs/2610.30211
+
+> Knowledge tracing (KT) models can estimate item parameters through an item response decoder trained solely for next-response prediction, yet predictive accuracy does not guarantee parameter recovery. We study 2PL, GPCM, and NRM decoders paired with LSTM, Transformer, and DKVMN encoders. Response-model derivatives show why discrimination and option slope updates depend directly on the scale and spr...
