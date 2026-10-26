@@ -1108,3 +1108,29 @@
 - **Link:** http://arxiv.org/abs/2610.31662v1
 
 > We consider online monitoring of an AI system that produces a sequence of decisions. At each round, the system outputs a proposed decision together with a confidence score estimating the trustworthiness of the decision. The decision and confidence score need not be produced by the same model: for example, one agent may propose a decision, while a separate verifier agent evaluates it and outputs a...
+
+## 2026-10-26
+
+
+### Paper 1 — RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms
+
+- **Authors:** Xi Chen, Fengqi Hu, Zeyu Shen, Jiaying Xu et al. (8 total)
+- **Link:** http://arxiv.org/abs/2610.32971v1
+
+> Robust reinforcement learning (RL) is critical for reliable real-world deployment, where policies may fail under diverse shifts and disruptions. Existing robust RL algorithms offer a rich set of mechanisms and principles, yet two major barriers limit their broader potential: limited algorithm reusability and an unclear empirical capability boundary. We introduce RobustRLlib, an algorithm-centric l...
+
+
+### Paper 2 — DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection
+
+- **Authors:** Amber Xie, Jiawei Fu, Xiaofeng Guo, Carmelo Sferrazza et al. (6 total)
+- **Link:** http://arxiv.org/abs/2610.32969v1
+
+> Collecting high-quality demonstrations remains a central bottleneck for learning dexterous manipulation. Teleoperation records executable robot actions, but it requires a complete robot setup and places the burden of coordinating many finger joints on the operator. Human demonstrations are easier to collect, but their motions must be estimated and retargeted to the robot, and they do not directly...
+
+
+### Paper 3 — Flownomaly: Single-Step Conditional-Mean Recovery for Few-Shot Anomaly Detection
+
+- **Authors:** Bernardo Perrone Ribeiro, Erkut Akdag, Egor Bondarev
+- **Link:** http://arxiv.org/abs/2610.32964v1
+
+> Few-shot industrial anomaly detection requires modeling category-specific normality from only a handful of defect-free images. Common approaches tie inference to stored exemplars, impose rigid linear structure, or risk reproducing anomalous content. Flownomaly instead casts the problem as normal-counterpart recovery in frozen DINOv2 feature space. Given normal supports, a velocity field is learned...
