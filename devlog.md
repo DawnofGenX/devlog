@@ -1134,3 +1134,29 @@
 - **Link:** http://arxiv.org/abs/2610.32964v1
 
 > Few-shot industrial anomaly detection requires modeling category-specific normality from only a handful of defect-free images. Common approaches tie inference to stored exemplars, impose rigid linear structure, or risk reproducing anomalous content. Flownomaly instead casts the problem as normal-counterpart recovery in frozen DINOv2 feature space. Given normal supports, a velocity field is learned...
+
+## 2026-10-27
+
+
+### Paper 1 — Collaborative In-Context Learning for Indoor Radio Map Estimation
+
+- **Authors:** Peng, Yuanzhe, Xu, Jie
+- **Link:** https://arxiv.org/abs/2610.31702
+
+> Indoor radio map estimation (RME) is essential for wireless applications such as coverage planning, localization, and network deployment. However, most existing methods follow a supervised learning paradigm that requires costly labeled data and task-specific model training. Moreover, indoor environments involve privacy-sensitive information, such as building layouts and structures, that often cann...
+
+
+### Paper 2 — The Path to NDE 4.0: A Review of Algorithms, Techniques, and Strategies for Autonomous Inspection
+
+- **Authors:** Rahmana, Ashiqur, Seethi, Venkata Devesh Reddy, Kral, Zachary, Yunker, Austin et al. (6 total)
+- **Link:** https://arxiv.org/abs/2610.31704
+
+> Non-Destructive Inspection (NDI) is a cornerstone of modern quality assurance, critical for ensuring the safety and reliability of infrastructure and manufactured components without causing damage. This paper presents a comprehensive review of the current NDI landscape, analyzing the field through four distinct lenses, namely, computational algorithms, physical techniques, industrial applications,...
+
+
+### Paper 3 — Does LeWorldModel Preserve Local Action Geometry?
+
+- **Authors:** Vasilev, Vasil, Nayak, Siddharth
+- **Link:** https://arxiv.org/abs/2610.31716
+
+> We examine how closely pretrained LeWorldModel (LeWM) reproduces the effects of small action changes. Using matched simulator and model responses, we measure action sensitivity with Gram matrices at three perturbation scales. Across nearly a thousand states from Reacher and OGBench Cube, the most sensitive action directions differ by median angles of about $36^\circ$ and $42^\circ$, respectively,...
