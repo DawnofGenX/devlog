@@ -1160,3 +1160,29 @@
 - **Link:** https://arxiv.org/abs/2610.31716
 
 > We examine how closely pretrained LeWorldModel (LeWM) reproduces the effects of small action changes. Using matched simulator and model responses, we measure action sensitivity with Gram matrices at three perturbation scales. Across nearly a thousand states from Reacher and OGBench Cube, the most sensitive action directions differ by median angles of about $36^\circ$ and $42^\circ$, respectively,...
+
+## 2026-10-28
+
+
+### Paper 1 — Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction
+
+- **Authors:** Prakhar Kaushik, Soumava Paul, Alan Yuille
+- **Link:** http://arxiv.org/abs/2610.37668v1
+
+> Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory and computational demands limit their use in resource-constrained settings. We introduce Hexels: novel planar hexagonal surface elements with a first-order spatial color field for efficient 3D scene and 2D image representation. Hexels exploit locally planar regions with smoothly va...
+
+
+### Paper 2 — When Should We Intervene at Test Time?
+
+- **Authors:** Jiahao Zhang, Xinling Wen, Liangliang Li, Yu Chen
+- **Link:** http://arxiv.org/abs/2610.37658v1
+
+> Test-time adaptation helps a deployed model respond to changing inputs, but the same intervention can rescue one batch and damage the next. Updating normalization statistics, for example, can improve corrupted images yet fail when a batch contains mostly one class. Average accuracy hides these failures and cannot tell a model when to use an intervention. Target labels can guide this decision, but...
+
+
+### Paper 3 — Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness
+
+- **Authors:** Igor Shilov, Xiaoxue Yang, Alexander Panfilov, Evgenii Kortukov et al. (9 total)
+- **Link:** http://arxiv.org/abs/2610.37657v1
+
+> We introduce Heads of Security (HoS), a prompt injection defense that enforces instruction-data separation via a small set of learned per-head attention gates. HoS learns how each head should redistribute attention between trusted and untrusted tokens, enabling models to reason over untrusted content without following injected instructions. We evaluate HoS on Llama-3.3-70B-Instruct and GPT-OSS-20B...
