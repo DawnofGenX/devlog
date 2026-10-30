@@ -1212,3 +1212,29 @@
 - **Link:** http://arxiv.org/abs/2610.37657v1
 
 > We introduce Heads of Security (HoS), a prompt injection defense that enforces instruction-data separation via a small set of learned per-head attention gates. HoS learns how each head should redistribute attention between trusted and untrusted tokens, enabling models to reason over untrusted content without following injected instructions. We evaluate HoS on Llama-3.3-70B-Instruct and GPT-OSS-20B...
+
+## 2026-10-30
+
+
+### Paper 1 — Does Federated Training Degrade Explainability? A Comparative Analysis of Grad-CAM Faithfulness in Centralized vs. Federated Deepfake Detection
+
+- **Authors:** Muhammad Uzair Shahid, Muhammad Zabil Mehboob
+- **Link:** http://arxiv.org/abs/2610.39483v1
+
+> Automated detection has become the essential safeguard against realistic synthetic media, but deploying it at scale requires training on sensitive data from multiple organizations, putting privacy and the transparency demanded by forensic review in direct conflict. Federated learning resolves the privacy side by sharing only model updates rather than raw data, but whether this comes at the cost of...
+
+
+### Paper 2 — Topology Survives Shuffling: Robust Long-Context Memory Access Prediction for Graph Analytics
+
+- **Authors:** Dongyan Sun, Neelesh Gupta, Rajgopal Kannan, Viktor K. Prasanna
+- **Link:** http://arxiv.org/abs/2610.39477v1
+
+> Graph analytics generates irregular, topology-dependent memory-access streams via indirect traversals, limiting data prefetching. Accurate prediction enables timely prefetches that hide memory latency. However, ML predictors couple short histories with fixed horizons, fitting the training trace's node layout rather than learning transferable graph patterns. We propose LoCoMAP, a long-context repre...
+
+
+### Paper 3 — CBE: A Complexity-adaptive Boundary-aware Ensemble Method for Imbalanced Data
+
+- **Authors:** Xun Wei
+- **Link:** http://arxiv.org/abs/2610.39466v1
+
+> In many real-world classification tasks, datasets exhibit class imbalance, which can degrade the generalization performance of conventional learning algorithms. Data complexity has recently been recognized as a more objective indicator of learning difficulty than the imbalance ratio alone, because class overlap and complex decision boundaries often impair classifiers more severely than imbalance i...
