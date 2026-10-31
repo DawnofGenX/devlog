@@ -1238,3 +1238,29 @@
 - **Link:** http://arxiv.org/abs/2610.39466v1
 
 > In many real-world classification tasks, datasets exhibit class imbalance, which can degrade the generalization performance of conventional learning algorithms. Data complexity has recently been recognized as a more objective indicator of learning difficulty than the imbalance ratio alone, because class overlap and complex decision boundaries often impair classifiers more severely than imbalance i...
+
+## 2026-10-31
+
+
+### Paper 1 — Propose-Filter-Release: Scaling Noise to Typical Sensitivity via Private Filtering
+
+- **Authors:** Moshe Shenfeld, Eliad Tsfadia, Katrina Ligett
+- **Link:** http://arxiv.org/abs/2610.40654v1
+
+> An estimator can be accurate and stable on typical data, yet sensitive to a few possible records. Differentially private mechanisms commonly scale their noise to the worst-case influence of a single record, which lets these records dictate the noise even when the remaining data would allow far less. Removing them first would restore the smaller scale, but the removal must itself be private. We int...
+
+
+### Paper 2 — Rethinking Neural Thickets Without Weight Perturbations
+
+- **Authors:** Nicolas Dufour, Elouan Gardès, Amil Dravid, Patrick Pérez et al. (5 total)
+- **Link:** http://arxiv.org/abs/2610.40649v1
+
+> The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian perturbations can uncover. We reproduce the reported gains, but show that they do not require this geometric explanation. Perturbing a single decoder block already recovers much of the improvement, while keeping the model entirely frozen a...
+
+
+### Paper 3 — Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers
+
+- **Authors:** Jiongfan Yang, Weichen Fan, Haiwen Diao, Zhongang Cai et al. (5 total)
+- **Link:** http://arxiv.org/abs/2610.40647v1
+
+> Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from global exchange, while high-frequency detail can be modeled locally. Based on this insight, we introdu...
