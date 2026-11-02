@@ -1290,3 +1290,29 @@
 - **Link:** http://arxiv.org/abs/2610.40647v1
 
 > Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from global exchange, while high-frequency detail can be modeled locally. Based on this insight, we introdu...
+
+## 2026-11-02
+
+
+### Paper 1 — Latent Reasoning in Continuous Space for Unified Multimodal Models
+
+- **Authors:** Byungwoo Jeon, Yoonwoo Jeong, Hyunseok Lee, Minsu Cho et al. (5 total)
+- **Link:** http://arxiv.org/abs/2610.42149v1
+
+> Unified Multimodal Models (UMMs) achieve remarkable success on diverse multimodal understanding and generation tasks, yet they still struggle to effectively leverage language-based chain-of-thought reasoning for image generation. As a result, existing reasoning-augmented UMMs often fail to inherit the test-time scaling and fine-grained controllability observed in large language models. We attribut...
+
+
+### Paper 2 — Counting on Dummies: Privacy Amplification with Observable Counts and Truncated Batches
+
+- **Authors:** Vitaly Feldman, Audra McMillan, Kunal Talwar
+- **Link:** http://arxiv.org/abs/2610.42139v1
+
+> In many practical deployments of Differentially Private Stochastic Gradient Descent (DP-SGD), the server processes data in batches. Randomly sampling these batches allows for better privacy bounds via privacy amplification results. Most sampling schemes with provable privacy amplification, including Poisson sampling and random allocation, result in variable batch sizes. The privacy guarantee of th...
+
+
+### Paper 3 — A Better Critic Matters for Distribution Matching Distillation
+
+- **Authors:** Zongze Wu, Xianbang Wang, Zhengyang Geng, Mingdeng Cao et al. (8 total)
+- **Link:** http://arxiv.org/abs/2610.42135v1
+
+> Distribution Matching Distillation (DMD) trains a few-step student using the difference between a teacher's score and an online critic's estimate of the student distribution's score. We investigate what the critic needs, in capacity and in information, to provide a reliable training signal. On the capacity side, controlled experiments across seven SiT model sizes on ImageNet show that increasing t...
