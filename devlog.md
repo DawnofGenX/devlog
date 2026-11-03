@@ -1316,3 +1316,29 @@
 - **Link:** http://arxiv.org/abs/2610.42135v1
 
 > Distribution Matching Distillation (DMD) trains a few-step student using the difference between a teacher's score and an online critic's estimate of the student distribution's score. We investigate what the critic needs, in capacity and in information, to provide a reliable training signal. On the capacity side, controlled experiments across seven SiT model sizes on ImageNet show that increasing t...
+
+## 2026-11-03
+
+
+### Paper 1 — Accelerating posterior sampling in Bayesian inverse problems with diffusion models: an online-offline perspective
+
+- **Authors:** Duc-Lam Duong
+- **Link:** http://arxiv.org/abs/2611.01300v1
+
+> Bayesian inverse problems require both informative prior models and computationally feasible posterior inference. Score-based diffusion models provide expressive learned priors, but their use for inversion introduces a conditioning problem: the score of a noised posterior is generally unavailable from a prior score alone. This selective survey reviews the principal approaches to that problem, incl...
+
+
+### Paper 2 — Best-of-Both-Worlds FTRL for Linear Bandits: The Interplay of Information Acquisition, Corruption, and Geometry
+
+- **Authors:** Canzhe Zhao, Vincent Y. F. Tan
+- **Link:** http://arxiv.org/abs/2611.01299v1
+
+> We study \textit{best-of-both-worlds} (BOBW) algorithms for linear bandits, which aim to simultaneously guarantee $\gO(\sqrt T)$ regret in the adversarial regime and $\gO(\log T)$ regret in the stochastic regime over $T$ rounds. For finite action sets, we introduce \emph{information-acquisition follow-the-regularized-leader} (\IAFTRL{}), the first BOBW algorithm based purely on the follow-the-regu...
+
+
+### Paper 3 — [Re] Pure Noise to the Rescue of Insufficient Data
+
+- **Authors:** Seungjae Ryan Lee, Seungmin Brian Lee
+- **Link:** http://arxiv.org/abs/2611.01295v1
+
+> We examine the main claims of Zada, Benou, and Irani (2021), which states that in an image classification task with imbalanced training data, (i) using pure noise to augment minority-class images encourages generalization by improving minority-class accuracy. This method is paired with (ii) a new batch normalization layer that normalizes noise images using affine parameters learned from natural im...
