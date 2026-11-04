@@ -1342,3 +1342,29 @@
 - **Link:** http://arxiv.org/abs/2611.01295v1
 
 > We examine the main claims of Zada, Benou, and Irani (2021), which states that in an image classification task with imbalanced training data, (i) using pure noise to augment minority-class images encourages generalization by improving minority-class accuracy. This method is paired with (ii) a new batch normalization layer that normalizes noise images using affine parameters learned from natural im...
+
+## 2026-11-04
+
+
+### Paper 1 — Training Specialist LLMs on Your Phone: Forward-Only Optimization via Block-Spectral Coordinates
+
+- **Authors:** Liyan Tan, Yequan Zhao, Ziyue Liu, Yupeng Su et al. (6 total)
+- **Link:** http://arxiv.org/abs/2611.04797v1
+
+> Large language models (LLMs) on personal devices keep user data local, but limited memory restricts their general capability. Since most user-specific tasks do not require the breadth of frontier models, a practical solution is to adapt a shared on-device model into lightweight specialists. However, backpropagation is prohibitive in memory, and users rarely provide labeled data. We present MobileS...
+
+
+### Paper 2 — Accelerating Offloading-Based MoE Inference by Interleaving Concurrent Requests
+
+- **Authors:** Hongseung Yu, In Gim, Kyunghan Lee, Lin Zhong
+- **Link:** http://arxiv.org/abs/2611.04794v1
+
+> Expert offloading enables large mixture-of-experts (MoE) language models to run locally, but conventional batching stalls the GPU while missing experts are fetched. A popular remedy, known as prefetching, is to predict what experts will be needed soon and fetch them using idle link bandwidth. Imprecise prediction, however, wastes bandwidth and GPU memory on fetching unnecessary experts. Our key fi...
+
+
+### Paper 3 — Density-Aware Reward Scaling: A Reinforcement Learning Framework for Reward-Proportional Sampling
+
+- **Authors:** Ria Shekhawat, Abhijeet Sinha, Yingtao Zhu, Dianbo Liu
+- **Link:** http://arxiv.org/abs/2611.04792v1
+
+> Reinforcement learning objectives that maximize expected return can concentrate probability mass on a small subset of high-reward outcomes, limiting diversity when multiple distinct solutions are desirable. We introduce Density-Aware Reward Scaling (DARS), a simple reward-processing mechanism that promotes reward-proportional sampling in continuous outcome spaces while retaining standard policy-gr...
