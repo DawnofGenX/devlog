@@ -1368,3 +1368,29 @@
 - **Link:** http://arxiv.org/abs/2611.04792v1
 
 > Reinforcement learning objectives that maximize expected return can concentrate probability mass on a small subset of high-reward outcomes, limiting diversity when multiple distinct solutions are desirable. We introduce Density-Aware Reward Scaling (DARS), a simple reward-processing mechanism that promotes reward-proportional sampling in continuous outcome spaces while retaining standard policy-gr...
+
+## 2026-11-05
+
+
+### Paper 1 — A Framework for Context Enrichment and Selective Robustness in LLM Social Agents
+
+- **Authors:** Mattia Greiche, Reihaneh Rabbany, Maximilian Puelma Touzel
+- **Link:** http://arxiv.org/abs/2611.06914v1
+
+> Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape their actions. Yet LLM agents have been shown to substantially change their behavior under meaning-preserving prompt variations, creating a validation problem for social simulation. One plausible hypothesis is that this brittleness reflects...
+
+
+### Paper 2 — FlowReconBench: Accuracy, calibration and cost of learned and classical flow reconstruction from sparse sensors
+
+- **Authors:** Nicolas Tricard, Linzheng Wang, Jason Chen, Sili Deng
+- **Link:** http://arxiv.org/abs/2611.06912v1
+
+> Reconstructing full flow fields from sparse sensors requires prior assumptions about unmeasured regions and physical variables. Yet it remains unclear when learned models outperform classical estimators and which aspects of their predictions can be trusted. FlowReconBench evaluates ten learned and five classical methods on three regimes: a laminar cylinder wake across Reynolds numbers, two-dimensi...
+
+
+### Paper 3 — Perceptive Humanoid Motion from Simulation
+
+- **Authors:** Siyuan Hu, Abulikemu Abuduweili, Yue Meng, Shipeng Liu et al. (8 total)
+- **Link:** http://arxiv.org/abs/2611.06908v1
+
+> Humanoid robots have the potential to automate a wide range of physical tasks. Progress toward generalist humanoid autonomy, however, remains constrained by a data bottleneck: mapping pixels and free-form language to low-level joint commands requires paired supervision, and no corpus of such data exists at sufficiently large scale. Some approaches rely on human teleoperation and wearable capture d...
