@@ -1394,3 +1394,29 @@
 - **Link:** http://arxiv.org/abs/2611.06908v1
 
 > Humanoid robots have the potential to automate a wide range of physical tasks. Progress toward generalist humanoid autonomy, however, remains constrained by a data bottleneck: mapping pixels and free-form language to low-level joint commands requires paired supervision, and no corpus of such data exists at sufficiently large scale. Some approaches rely on human teleoperation and wearable capture d...
+
+## 2026-11-06
+
+
+### Paper 1 — Towards Multiscale Molecular Representation Learning through Geometry-Based Fragmentation for Polymer Property Prediction
+
+- **Authors:** Makoto Takamoto, Chaitanya Sampara, Viktor Zaverkin, Daniel Oñoro-Rubio et al. (5 total)
+- **Link:** http://arxiv.org/abs/2611.07998v1
+
+> It is well established that molecular substructures can contribute unequally to chemical and physical properties, with specific motifs or side chains often playing dominant roles. Fragment-based representations have therefore emerged as an effective strategy for incorporating chemically meaningful inductive biases, as exemplified by molecular fingerprints and fragment-based attention mechanisms. H...
+
+
+### Paper 2 — QRAE: Query-Relevant Attention Entropy for Context Compression in DeepSearch Agents
+
+- **Authors:** Yingjie Tan, Haiquan Qiu, Quanming Yao, Manyi Zhong et al. (6 total)
+- **Link:** http://arxiv.org/abs/2611.07976v1
+
+> DeepSearch LLM agents repeatedly search and carry retrieved sources into subsequent reasoning steps. This expanding context increases token consumption and latency, although many results do not contribute to later reasoning. We propose Query-Relevant Attention Entropy (QRAE), an online context compression method that uses sparse evidence-assessment heads to decide which intact retrieved chunks sho...
+
+
+### Paper 3 — Tight Asymptotic Bounds on the Maximum Number of Linear Regions of Piecewise-Linear Kolmogorov--Arnold networks
+
+- **Authors:** Ye Su, Yong Liu
+- **Link:** http://arxiv.org/abs/2611.07973v1
+
+> Schoots et al.~\citep{schoots2025relating} (AISTATS 2025) established a generally loose upper bound on the number of linear regions of continuous piecewise-linear (CPWL) Kolmogorov--Arnold networks (KANs), without providing a lower bound. We consider a $T$-layer network with width vector $\mathbf n=(n_0,\ldots,n_T)$, input dimension $n_0=d$, output width $n_T=1$, and at most $k\geq2$ affine segmen...
