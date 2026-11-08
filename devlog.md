@@ -1446,3 +1446,29 @@
 - **Link:** http://arxiv.org/abs/2611.08472v1
 
 > ML code should run where researchers choose, not where it was first written. Today, machine learning code mainly lives in two ecosystems, PyTorch on NVIDIA GPUs and JAX on Google TPUs. Migrating repositories between them means building and testing across frameworks and hardware. This migration is (1) a practical need, since it unlocks different hardware for researchers, and (2) a natural benchmark...
+
+## 2026-11-08
+
+
+### Paper 1 — User Embeddings are Superpositions of Interpretable Behavioral Modes
+
+- **Authors:** Jonathan Kozaczuk, Zheng Dong, Noyan Evirgen, Keivan Majidi et al. (10 total)
+- **Link:** http://arxiv.org/abs/2611.08487v1
+
+> User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are inherently dense and opaque, limiting interpretability. To address this gap, we argue that user embeddings can be understood as sparse superpositions of interpretable behavioral modes. This structure is...
+
+
+### Paper 2 — Scientist World: Grow a Research World for AI-Scientists
+
+- **Authors:** Taiming Lu, Sachin Konan, Zhuang Liu
+- **Link:** http://arxiv.org/abs/2611.08478v1
+
+> AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ideas, waiting in the scientific literature. To AI-Scientists, that world is readable but not runnable, so we build Scientist World for them: every research paper becomes an executable environment. Our autonomous pipeline extracts each paper's open-ende...
+
+
+### Paper 3 — XStack: A Benchmark for ML Repo Migration
+
+- **Authors:** Linrong Cai, Taiming Lu, Haozhe Chen, Zhuang Liu
+- **Link:** http://arxiv.org/abs/2611.08472v1
+
+> ML code should run where researchers choose, not where it was first written. Today, machine learning code mainly lives in two ecosystems, PyTorch on NVIDIA GPUs and JAX on Google TPUs. Migrating repositories between them means building and testing across frameworks and hardware. This migration is (1) a practical need, since it unlocks different hardware for researchers, and (2) a natural benchmark...
