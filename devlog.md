@@ -1472,3 +1472,29 @@
 - **Link:** http://arxiv.org/abs/2611.08472v1
 
 > ML code should run where researchers choose, not where it was first written. Today, machine learning code mainly lives in two ecosystems, PyTorch on NVIDIA GPUs and JAX on Google TPUs. Migrating repositories between them means building and testing across frameworks and hardware. This migration is (1) a practical need, since it unlocks different hardware for researchers, and (2) a natural benchmark...
+
+## 2026-11-09
+
+
+### Paper 1 — Consensus-Constrained Dual-Federated Optimization with Client-Side Dynamic Weighting for Distributed Android Device Threat Defense
+
+- **Authors:** Mohammad Mashreghi, Mohammad Hossein Badiei, Md. Jalil Piran
+- **Link:** http://arxiv.org/abs/2611.09470v1
+
+> Smartphones, smart-home hubs, and wearables are increasingly exposed to sophisticated Android malware, while centralized threat-detection pipelines raise privacy and scalability concerns. Federated learning (FL) enables collaborative model training without collecting raw client data, but partial participation and variation in local model quality can destabilize global optimization. In this article...
+
+
+### Paper 2 — From LoRA to Language: Recovering Skill Documents from Adapters
+
+- **Authors:** Saranya Dintakurthy Swadha, Pavan C Shekar, Arpit Jain, Aswanth Krishnan
+- **Link:** http://arxiv.org/abs/2611.09454v1
+
+> Agent skills are short documents that teach a language model how to handle a class of tasks. To save context, these documents are increasingly compiled into low-rank adapters (LoRA), which keep the behaviour but lose the text: an adapter is hard to read, edit, audit or move to another model. We ask whether the skill document can be written back from the adapter and its frozen base model, and we sc...
+
+
+### Paper 3 — Not All Entropy Is Equal: Reward-Conditioned Entropy Allocation in Reinforcement Learning with Verifiable Rewards
+
+- **Authors:** Song Yu, Li Li, Zhenming Wu
+- **Link:** http://arxiv.org/abs/2611.09448v1
+
+> Policy entropy is widely used to diagnose exploration and collapse in reinforcement learning with verifiable rewards (RLVR), yet its magnitude does not consistently track reasoning performance across optimization objectives. We argue that this ambiguity arises because global token entropy conflates uncertainty in successful and failed trajectories, diversity across correct solution strategies, and...
