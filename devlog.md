@@ -1498,3 +1498,29 @@
 - **Link:** http://arxiv.org/abs/2611.09448v1
 
 > Policy entropy is widely used to diagnose exploration and collapse in reinforcement learning with verifiable rewards (RLVR), yet its magnitude does not consistently track reasoning performance across optimization objectives. We argue that this ambiguity arises because global token entropy conflates uncertainty in successful and failed trajectories, diversity across correct solution strategies, and...
+
+## 2026-11-10
+
+
+### Paper 1 — Guiding Data Allocation for Robust Subpopulation Generalization
+
+- **Authors:** Zhaoying Pan, Yipei Wang, Shenyu Lu, Xiaoqian Wang
+- **Link:** http://arxiv.org/abs/2611.12884v1
+
+> Machine learning models often achieve high average accuracy in the training data while performing poorly on test data due to subpopulation shift. A common data-centric solution is to enforce balanced subgroup proportions, but full balance can be costly, infeasible, and not always necessary. In this work, we study whether balanced training data is the unique optimal configuration for robust subpopu...
+
+
+### Paper 2 — Kolmogorov-Chapman Maps: Trajectory-Free Learning for Simulating Molecular Dynamics
+
+- **Authors:** Majdi Hassan, Marta Skreta, Dominique Beaini, Kirill Neklyudov
+- **Link:** http://arxiv.org/abs/2611.12880v1
+
+> Stochastic differential equations (SDEs) describe stochastic processes across a wide range of scientific domains, including physics, biology, and finance. Although individual numerical integration steps are inexpensive, observing meaningful events or transitions can require millions of sequential steps, resulting in substantial wall-clock simulation time and poor hardware utilization. Deep learnin...
+
+
+### Paper 3 — Adaptive Quantization Preserves Fast Rates for TD Learning over Rate-Limited Channels
+
+- **Authors:** Sreejeet Maity, Aritra Mitra
+- **Link:** http://arxiv.org/abs/2611.12878v1
+
+> Motivated by reinforcement learning subject to communication constraints, we study a policy evaluation problem with linear function approximation over a rate-limited channel. In our setup, an agent interacting with an unknown environment (modeled as a Markov Decision Process) transmits quantized estimates of a temporal-difference (TD) learning update direction to a server over a finite-capacity ch...
