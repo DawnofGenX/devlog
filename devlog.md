@@ -1524,3 +1524,29 @@
 - **Link:** http://arxiv.org/abs/2611.12878v1
 
 > Motivated by reinforcement learning subject to communication constraints, we study a policy evaluation problem with linear function approximation over a rate-limited channel. In our setup, an agent interacting with an unknown environment (modeled as a Markov Decision Process) transmits quantized estimates of a temporal-difference (TD) learning update direction to a server over a finite-capacity ch...
+
+## 2026-11-11
+
+
+### Paper 1 — Generalizing Causal Decision-Making: Markov Equivalence, Transportability and Counterfactuals
+
+- **Authors:** Min Woo Park, Sanghack Lee
+- **Link:** http://arxiv.org/abs/2611.14066v1
+
+> Structural causal bandits use causal knowledge to guide exploration when reward mechanisms are unknown. This paper extends the approach to partially known causal structure, information from other environments, and realizable counterfactual actions. First, we develop graphical criteria for minimal intervention sets under Markov equivalence and characterize possibly-optimal minimal intervention sets...
+
+
+### Paper 2 — Where Do Vision-Language Models Get Left and Right? Position-Code Counterfactuals in Qwen2.5-VL, Qwen3-VL and InternVL3
+
+- **Authors:** Enhao Cui, Junzhi Yang, Yaoshun Lin, Yuhan Feng et al. (5 total)
+- **Link:** http://arxiv.org/abs/2611.14060v1
+
+> A vision-language model may take left-right direction from the orientation of image content within patches, its vision transformer's (ViT) position code, or token positions and order in its language model (LLM). Ablations show the ViT code is necessary; we test sufficiency by mirroring only a position code. In Qwen2.5-VL-7B, Qwen3-VL-4B and InternVL3-2B, mirroring ViT width positions reproduces th...
+
+
+### Paper 3 — HandsOnAid: Building and Evaluating an Offline First-Aid Assistant for Emergency Response Scenarios
+
+- **Authors:** Rezwan Islam Salvi, Saiyma Sittul Muna, Mushfiqur Rahman Mushfique
+- **Link:** http://arxiv.org/abs/2611.14059v1
+
+> Emergencies can occur where there is no phone signal and no ambulance nearby. A small language model on a phone can be helpful in such situations, but its advice needs to be safe and accurate. We built HandsOnAid, a 4-bit Gemma 2B model fine-tuned with QLoRA on FirstAidQA dataset, a corpus of 5,550 first-aid question-answer pairs. We compared seven configurations, including the base, 4-bit and 8-b...
