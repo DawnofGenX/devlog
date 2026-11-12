@@ -1550,3 +1550,29 @@
 - **Link:** http://arxiv.org/abs/2611.14059v1
 
 > Emergencies can occur where there is no phone signal and no ambulance nearby. A small language model on a phone can be helpful in such situations, but its advice needs to be safe and accurate. We built HandsOnAid, a 4-bit Gemma 2B model fine-tuned with QLoRA on FirstAidQA dataset, a corpus of 5,550 first-aid question-answer pairs. We compared seven configurations, including the base, 4-bit and 8-b...
+
+## 2026-11-12
+
+
+### Paper 1 — TorchCurves: Differentiable Parametric Curves
+
+- **Authors:** Alex Shtoff
+- **Link:** http://arxiv.org/abs/2611.14516v1
+
+> We present TorchCurves, a PyTorch library that treats vector-valued parametric curves as learnable primitives. Its central operation maps batches of scalar inputs to points on curves represented in B-spline or Legendre polynomial bases, with differentiation through both inputs and coefficients. Curve coefficients can be optimized jointly with the surrounding model or produced by another network. T...
+
+
+### Paper 2 — AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models
+
+- **Authors:** Zijian Zhang, Rizhen Hu, Jiangweizhi Peng, Shiyang Li et al. (7 total)
+- **Link:** http://arxiv.org/abs/2611.14515v1
+
+> Reinforcement learning with verifiable rewards (RLVR) produces rich training experience, yet outcome rewards reduce each attempt to a single number and leave most of this information unused. Training-time scaffolds, such as strategies or hints added to the prompt during training, offer a natural way to turn this information into guidance, but their design and adaptation are largely left to humans...
+
+
+### Paper 3 — Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations
+
+- **Authors:** Ziang Liu, James J. Kim, Yijia Dai, Jennifer J. Sun
+- **Link:** http://arxiv.org/abs/2611.14514v1
+
+> LLM agents are increasingly used for open-ended, data-driven scientific discovery, yet most of them evaluate hypotheses pointwise, testing an empirical claim $h$ only against its complement $\neg h$. When evidence rejects $h$, the agent learns that one explanation is unlikely but not which alternative the evidence supports. To recover that alternative, we introduce Contrastive Discovery, which rep...
