@@ -1576,3 +1576,29 @@
 - **Link:** http://arxiv.org/abs/2611.14514v1
 
 > LLM agents are increasingly used for open-ended, data-driven scientific discovery, yet most of them evaluate hypotheses pointwise, testing an empirical claim $h$ only against its complement $\neg h$. When evidence rejects $h$, the agent learns that one explanation is unlikely but not which alternative the evidence supports. To recover that alternative, we introduce Contrastive Discovery, which rep...
+
+## 2026-11-13
+
+
+### Paper 1 — Learning a calibrated decision head from logged bandit feedback
+
+- **Authors:** Ye Yuan
+- **Link:** http://arxiv.org/abs/2611.15572v1
+
+> A decision head reads a state and a list of options and returns a probability per option in one forward pass. Once deployed, it usually observes only whether the option it chose was right: logged bandit feedback. We adapt such a head, LoRA on Qwen3-0.6B-Base and 1.7B-Base, from that feedback and report three results. First, the Brier or log score of the sampled action's own probability is not a us...
+
+
+### Paper 2 — TraceKV: Policy-Preserving Low-Rank KV Cache Compression for Reasoning Vision-Language Models
+
+- **Authors:** Ke Li, Zishan Shao, Yiran Chen
+- **Link:** http://arxiv.org/abs/2611.15569v1
+
+> Reasoning vision-language models (VLMs) impose substantial KV cache demands from both large multimodal contexts and growing reasoning traces. Low-rank KV compression has emerged as a promising paradigm that stores low-dimensional latents of KV states and can be combined with quantization. However, existing low-rank methods often induce growing predictive policy drift from the dense model when comp...
+
+
+### Paper 3 — Observations Drift, Structures Remain: Structural Pretraining with Time Alignment for Electromagnetic Signals
+
+- **Authors:** Wenjin Gui, Junyu Shen, Haibo Xu, Yuchuang Sun et al. (10 total)
+- **Link:** http://arxiv.org/abs/2611.15566v1
+
+> Electromagnetic signal modeling is increasingly moving toward self-supervised pretraining on heterogeneous I/Q observations. However, an observed waveform is jointly shaped by signal generation, propagation environments, and acquisition processes, which mix reusable structural regularities with observation-specific variations. Existing methods usually pursue unified pretraining with reconstruction...
