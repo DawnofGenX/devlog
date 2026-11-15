@@ -1628,3 +1628,29 @@
 - **Link:** http://arxiv.org/abs/2611.17329v1
 
 > Institutional portfolios operate under investment policy statements that specify asset allocation constraints, often conditioned on market regime information. Deep reinforcement learning has been shown to optimize financial performance but typically does not enforce rule compliance, making it unsuitable for real-world deployment. Existing neurosymbolic methods such as Probabilistic Logic Policy Gr...
+
+## 2026-11-15
+
+
+### Paper 1 — Unbundling Multimodal Vision Encoding
+
+- **Authors:** Ellis Brown, Chris Hoang, Shengyi Qian, Shang-Wen Li et al. (12 total)
+- **Link:** http://arxiv.org/abs/2611.17334v1
+
+> How multimodal language models should encode visual input remains up for debate. Most models use a pretrained vision encoder, while some recent recipes train the encoder from scratch with the language model or remove it entirely. Vision encoders bundle together three design choices: a visual prior from upstream pretraining, dedicated vision capacity, and pre-fusion placement of that capacity (i.e....
+
+
+### Paper 2 — ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research
+
+- **Authors:** Jie Wang, Tong Zhu, JiaHao Kuang, Zhe Xu et al. (11 total)
+- **Link:** http://arxiv.org/abs/2611.17332v1
+
+> Model architecture shapes the scaling behavior, training efficiency, and inference cost of LLMs, making it a central focus of both industry and academia. In industry, teams such as those behind DeepSeek, Qwen, and Kimi routinely introduce architectural innovations, yet public reports rarely document which ideas succeeded, which were abandoned, and why. In academia, limited compute and inconsistent...
+
+
+### Paper 3 — Internalizing Investment Mandates: A Neurosymbolic RL Approach to Portfolio Allocation
+
+- **Authors:** Zeynep Yıldız, Satchit Chatterji, Ercan Atam, Erman Acar
+- **Link:** http://arxiv.org/abs/2611.17329v1
+
+> Institutional portfolios operate under investment policy statements that specify asset allocation constraints, often conditioned on market regime information. Deep reinforcement learning has been shown to optimize financial performance but typically does not enforce rule compliance, making it unsuitable for real-world deployment. Existing neurosymbolic methods such as Probabilistic Logic Policy Gr...
