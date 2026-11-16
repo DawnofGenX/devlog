@@ -1654,3 +1654,29 @@
 - **Link:** http://arxiv.org/abs/2611.17329v1
 
 > Institutional portfolios operate under investment policy statements that specify asset allocation constraints, often conditioned on market regime information. Deep reinforcement learning has been shown to optimize financial performance but typically does not enforce rule compliance, making it unsuitable for real-world deployment. Existing neurosymbolic methods such as Probabilistic Logic Policy Gr...
+
+## 2026-11-16
+
+
+### Paper 1 — Pairing AIS with RF: Analysis of a Markovian Approach for Maritime Data Fusion
+
+- **Authors:** Daniel Grimm, Kyra Jongman, Renato Cordeiro Ferreira, Giuseppe Cascavilla et al. (6 total)
+- **Link:** http://arxiv.org/abs/2611.18563v1
+
+> Monitoring maritime activities is important for safety and security, particularly for detecting illegal activities, but remains challenging due to the size and complexity of the maritime domain. The Automatic Identification System (AIS) is commonly used for this purpose, despite its known vulnerabilities. In contrast, space-based radio frequency (RF) observations provide an independent source of v...
+
+
+### Paper 2 — FETTUCCINE: Fast and efficient brain-to-text decoding on mobile devices
+
+- **Authors:** Jonathan D. McCart, Pranav I. Deevi, Mehdi Azabou, Nanda H. Krishna et al. (8 total)
+- **Link:** http://arxiv.org/abs/2611.18561v1
+
+> Recent advances in speech neuroprostheses have enabled new communication avenues for people who have lost the ability to speak due to neurological illness or injury. These systems can decode neural activity during attempted speech into text by relying on language priors to achieve high decoding accuracy. This performance currently comes at the cost of using a compute-intensive language modeling st...
+
+
+### Paper 3 — Training Reasoning Models in Simulation to Natively Use Real Robots
+
+- **Authors:** Jiaming Tang, Zhuoyang Zhang, Junxian Guo, Fangzhou Zhao et al. (11 total)
+- **Link:** http://arxiv.org/abs/2611.18562v1
+
+> Robot-use agents (RUAs) have emerged as a promising approach to general-purpose robot control. However, strong performance has so far been achieved only by frontier proprietary models such as GPT-6 Astra and Claude Fable 5.2, whereas open-weight models remain substantially less capable. We show that an open-weight 27B reasoning model can be trained to use real robots natively through reinforcement...
