@@ -1680,3 +1680,29 @@
 - **Link:** http://arxiv.org/abs/2611.18562v1
 
 > Robot-use agents (RUAs) have emerged as a promising approach to general-purpose robot control. However, strong performance has so far been achieved only by frontier proprietary models such as GPT-6 Astra and Claude Fable 5.2, whereas open-weight models remain substantially less capable. We show that an open-weight 27B reasoning model can be trained to use real robots natively through reinforcement...
+
+## 2026-11-17
+
+
+### Paper 1 — Check Token: Real-Time Self-Verification and Precise Truncation in LLM Reasoning
+
+- **Authors:** Ding, Fei, Zhang, Yongkang, Liao, Yuhao, Zeng, Zijian et al. (5 total)
+- **Link:** https://arxiv.org/abs/2611.18564
+
+> ECC memory embeds 8 parity bits for every 64 data bits and automatically detects and corrects errors on each read. The parity bits carry no data and only safeguard integrity, at ~12.5% overhead. Yet the reasoning chains of large language models lack such built-in self-verification: once an error occurs it propagates along the chain, and existing methods can only verify externally after generation...
+
+
+### Paper 2 — Quantize, Qualify, Rerank: A Recipe for Compressing LLMs Without Losing Quality
+
+- **Authors:** Gowda, Thamme
+- **Link:** https://arxiv.org/abs/2611.18587
+
+> Compressing large language models lowers serving cost, but a single automatic metric may miss quality loss. For the WMT26 Model Compression constrained track, we compress google/gemma-3-12b-it (24.4 GB in bf16) for three translation directions on one H100. Paired bootstrap analysis exposes metric disagreement on 4-bit quantization; guided by WMT24 human meta-evaluation, we use MetricX24-XXL as pri...
+
+
+### Paper 3 — Skill-Latent Rewards: LLM-Guided Reward Formulation for Hierarchical Reinforcement Learning
+
+- **Authors:** Shoaeinaeini, Maryam, Harrison, Brent
+- **Link:** https://arxiv.org/abs/2611.18597
+
+> Long-horizon reinforcement learning under sparse and delayed feedback remains an open challenge. Existing return-decomposition methods redistribute episodic rewards to ease credit assignment, but they operate on raw state--action transitions and disregard the subgoal structure that governs meaningful progress in complex tasks. We propose Skill-LR, a hierarchical reinforcement learning framework in...
