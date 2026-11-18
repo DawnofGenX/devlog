@@ -1706,3 +1706,29 @@
 - **Link:** https://arxiv.org/abs/2611.18597
 
 > Long-horizon reinforcement learning under sparse and delayed feedback remains an open challenge. Existing return-decomposition methods redistribute episodic rewards to ease credit assignment, but they operate on raw state--action transitions and disregard the subgoal structure that governs meaningful progress in complex tasks. We propose Skill-LR, a hierarchical reinforcement learning framework in...
+
+## 2026-11-18
+
+
+### Paper 1 — Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching
+
+- **Authors:** Giannis Daras, Marios Papachristou, Adam Klivans, Antonio Torralba et al. (5 total)
+- **Link:** http://arxiv.org/abs/2611.23229v1
+
+> Collecting large-scale, diverse, and high-quality post-training datasets for autoregressive language models is challenging. Consequently, Supervised Fine-Tuning (SFT) is typically applied to datasets significantly smaller than those used for pre-training, which leads to overfitting and the catastrophic forgetting of the tails of the data distribution. To prevent this collapse, we introduce Ambient...
+
+
+### Paper 2 — Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models
+
+- **Authors:** Rui Ning, Om Chabra, Hari Balakrishnan
+- **Link:** http://arxiv.org/abs/2611.23228v1
+
+> Applications such as visual accessibility agents and robotics require answering questions about recent video content promptly, over a bounded window of past frames (e.g., the last two minutes). Hybrid vision-language models (VLMs), which interleave attention with linear recurrent layers such as Gated DeltaNet (GDN), are attractive for this setting, but maintaining a sliding window is expensive. Th...
+
+
+### Paper 3 — An inexact stochastic variance-reduced gradient method for constrained convex finite-sum optimization
+
+- **Authors:** Zhaosong Lu, Yifeng Xiao
+- **Link:** http://arxiv.org/abs/2611.23221v1
+
+> In this paper, we study a class of constrained convex finite-sum optimization problems. In many practical applications, all or some of the constraints are hard constraints that represent imperative requirements. Consequently, any desirable approximate solution must (nearly) satisfy these constraints. Motivated by this, we focus on computing an $ε$-$surely\ feasible\ stochastic\ optimal$ ($ε$-SFSO)...
