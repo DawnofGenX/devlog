@@ -1732,3 +1732,29 @@
 - **Link:** http://arxiv.org/abs/2611.23221v1
 
 > In this paper, we study a class of constrained convex finite-sum optimization problems. In many practical applications, all or some of the constraints are hard constraints that represent imperative requirements. Consequently, any desirable approximate solution must (nearly) satisfy these constraints. Motivated by this, we focus on computing an $ε$-$surely\ feasible\ stochastic\ optimal$ ($ε$-SFSO)...
+
+## 2026-11-19
+
+
+### Paper 1 — Knowing What You Know: A Trait Theory of Reviewer Value in Human-AI Cognitive Systems
+
+- **Authors:** Priyanka Sinha, Sugam Pandey
+- **Link:** http://arxiv.org/abs/2611.24932v1
+
+> When a capable model and a human reviewer cooperate on the same decision, which human still adds value? We argue this is a question about a single cognitive trait, metacognitive calibration: the alignment between a reviewer's behavioral confidence and the actual correctness of their judgments. We develop a trait theory of reviewer value to make it precise. The theory makes five claims: value is go...
+
+
+### Paper 2 — Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation
+
+- **Authors:** Samet Demir, Zafer Dogan
+- **Link:** http://arxiv.org/abs/2611.24908v1
+
+> We study two-layer neural networks trained by stochastic gradient descent (SGD) on a multi-index teacher model, focusing on how first-layer parameters orthogonal to the teacher subspace affect generalization. We decompose the first-layer weights into a signal component aligned with the teacher and an orthogonal complement, and analyze their joint SGD dynamics together with the second layer in the...
+
+
+### Paper 3 — Equivariant Modeling with Polynomial Features via Minimal Homogeneous Generators
+
+- **Authors:** Michael Liaofan Liu, Joe Kileel
+- **Link:** http://arxiv.org/abs/2611.24896v1
+
+> We present a general framework for modeling and learning equivariant functions between finite dimensional semisimple real group representations, unifying constructions developed across many application areas. Our model is a linear combination of equivariant polynomial features whose coefficients are arbitrary learnable functions of invariant polynomial features. We take as features minimal homogen...
