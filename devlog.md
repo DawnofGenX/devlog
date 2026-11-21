@@ -1784,3 +1784,29 @@
 - **Link:** http://arxiv.org/abs/2611.26617v1
 
 > Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers such supervision from visual transitions, yet often learns the underlying dynamics largely from scratch. We ask whether a pretrained video generator can instead provide the prior for both inverse and forward dynamics. We introduce O$^{2}$LaF, built on a simple principle: one prior,...
+
+## 2026-11-21
+
+
+### Paper 1 — RL Post-Training in Diffusion Transformers Is Activation Steering
+
+- **Authors:** Tuna Han Salih Meral, Kaan Oktay, Alec Helbling, Atakan Kara et al. (6 total)
+- **Link:** http://arxiv.org/abs/2611.26627v1
+
+> Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional accuracy of diffusion transformers. Because capabilities such as rendering requested text or composing multiple objects are inherently prompt-dependent, a natural hypothesis is that improving them requires learning complex, input-dependent transformations. To isolate how much of t...
+
+
+### Paper 2 — TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming
+
+- **Authors:** Jinbin Luo, Xiaozhe Yao, Shang Yang, Zhijian Liu et al. (6 total)
+- **Link:** http://arxiv.org/abs/2611.26619v1
+
+> Hybrid architectures have become mainstream among open-weight language models. Their global-attention and bounded-state layers maintain heterogeneous caches whose demands vary with context length and concurrency. We present TideCache, a serving system on CPU--GPU superchips with three components for allocating GPU memory among caches and managing their residency across GPU and host memory. The Tra...
+
+
+### Paper 3 — One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning
+
+- **Authors:** Yuxin Jiang, Wenqiang Sun, Jiaqi Li, Yuchao Gu et al. (7 total)
+- **Link:** http://arxiv.org/abs/2611.26617v1
+
+> Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers such supervision from visual transitions, yet often learns the underlying dynamics largely from scratch. We ask whether a pretrained video generator can instead provide the prior for both inverse and forward dynamics. We introduce O$^{2}$LaF, built on a simple principle: one prior,...
