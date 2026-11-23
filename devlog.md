@@ -1836,3 +1836,29 @@
 - **Link:** http://arxiv.org/abs/2611.26617v1
 
 > Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers such supervision from visual transitions, yet often learns the underlying dynamics largely from scratch. We ask whether a pretrained video generator can instead provide the prior for both inverse and forward dynamics. We introduce O$^{2}$LaF, built on a simple principle: one prior,...
+
+## 2026-11-23
+
+
+### Paper 1 — On the loss landscape of the linear neural network: beyond critical points
+
+- **Authors:** Lejay, Antoine, Lenotre, Lionel, Toubra, Sa{ï}d
+- **Link:** https://arxiv.org/abs/2611.26671
+
+> While the critical points of the loss landscape in linear neural networks have been extensively studied since the seminal work of Baldi \& Hornik in the late 1980s, a description of this landscape at an intermediate or global scale is still lacking. Such a characterization is crucial, particularly as a substantial body of literature indicates that gradient descent circumvents critical points. The...
+
+
+### Paper 2 — Parasite Features: Causal Abstraction Through Spurious Pathways
+
+- **Authors:** Sutter, Denis, Yao, Qing, Boguraev, Sasha, Minder, Julian et al. (8 total)
+- **Link:** https://arxiv.org/abs/2611.26711
+
+> Causal Abstraction defines a notion of \emph{equivalence} between a neural network and an algorithm, thus serving as a powerful framework for mechanistic interpretability. In this paper, however, we show the existence of a class of \emph{spurious features} which straightforwardly pass such equivalence tests. Suppose there are two directions in a model's representation space where: (i) one discrimi...
+
+
+### Paper 3 — Cross-Attack Robust Aggregation for Federated Learning
+
+- **Authors:** Al-Masri, Eyhab
+- **Link:** https://arxiv.org/abs/2611.26731
+
+> Federated learning (FL) lets resource-constrained IoT and edge devices train a shared model without exchanging raw data, but compromised or faulty devices can poison the global model. Existing robust aggregators each fail in some regime: naive averaging (FedAvg) collapses under high-magnitude attacks, whereas distance- and statistics-based defenses (Krum, median, trimmed mean) sacrifice accuracy o...
