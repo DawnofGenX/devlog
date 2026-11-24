@@ -1862,3 +1862,29 @@
 - **Link:** https://arxiv.org/abs/2611.26731
 
 > Federated learning (FL) lets resource-constrained IoT and edge devices train a shared model without exchanging raw data, but compromised or faulty devices can poison the global model. Existing robust aggregators each fail in some regime: naive averaging (FedAvg) collapses under high-magnitude attacks, whereas distance- and statistics-based defenses (Krum, median, trimmed mean) sacrifice accuracy o...
+
+## 2026-11-24
+
+
+### Paper 1 — WISP: Composable Representations for Wrist-Worn Activity Recognition
+
+- **Authors:** Wu, Zipeng, Zhou, Shiqiao, Spill, Fabian, Andrews, James
+- **Link:** https://arxiv.org/abs/2611.28033
+
+> Smartwatches and fitness bands are among the most common wearable devices, and large national health studies record movement at the wrist. Yet existing human activity recognition benchmarks mix sensors worn on different parts of the body, so they do not show how well activities can be recognised from the wrist alone. We introduce WristHARBench, a benchmark that standardises participant-disjoint ev...
+
+
+### Paper 2 — Measuring and Teaching Language Model Agents to Act on Delayed Consequences
+
+- **Authors:** Bansal, Shardul, Schilbe, Seth, Barnes, Jarrod
+- **Link:** https://arxiv.org/abs/2611.28158
+
+> Language model agents are increasingly asked to run ongoing multi-day operations rather than finish isolated single-turn tasks. In daily operations, today's choices reshape later observations and cash constraints because empty shelves hide lost walk-in demand, short-shipped customers quietly shrink future orders weeks later, and emergency buying drains working capital. We introduce SMB Bench, a ca...
+
+
+### Paper 3 — RefineKV: Query-Adaptive KV Cache Compression via Attention-Error Bounds
+
+- **Authors:** Lian, Kewei, Zhai, Jiayi, Liu, Anji
+- **Link:** https://arxiv.org/abs/2611.28171
+
+> Repeatedly accessing the full key--value (KV) cache is a major bottleneck in long-context language model decoding. We find that small query-specific subsets can accurately approximate full attention, yet their union covers nearly the entire cache, motivating query-adaptive access for the KV cache. A natural approach is to split the KV cache into clusters, using compact representatives for clusters...
