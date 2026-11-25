@@ -1888,3 +1888,29 @@
 - **Link:** https://arxiv.org/abs/2611.28171
 
 > Repeatedly accessing the full key--value (KV) cache is a major bottleneck in long-context language model decoding. We find that small query-specific subsets can accurately approximate full attention, yet their union covers nearly the entire cache, motivating query-adaptive access for the KV cache. A natural approach is to split the KV cache into clusters, using compact representatives for clusters...
+
+## 2026-11-25
+
+
+### Paper 1 — A Framework for Graph Node Symmetric Quantification under Dataset Shift
+
+- **Authors:** Alessio Micheli, Alejandro Moreo, Marco Podda, Fabrizio Sebastiani et al. (5 total)
+- **Link:** http://arxiv.org/abs/2611.32403v1
+
+> Graph node quantification is the supervised learning task of estimating the prevalence of different classes within an arbitrary sample of unlabelled nodes from a graph, subject to some form of dataset shift. Existing approaches to graph node quantification typically follow the standard aggregative paradigm, i.e., they use labelled nodes from the graph to train an intermediate node classifier, and...
+
+
+### Paper 2 — Optimal Transport Meets t-SNE: Integrated Visualization without Batch Effects in OT-tSNE
+
+- **Authors:** Azhar Akhmetova, Edward Eichhorn, Boris Landa, Dmitry Kobak et al. (5 total)
+- **Link:** http://arxiv.org/abs/2611.32402v1
+
+> Visual exploration is an integral step in understanding the structure of datasets. However, systematic variation between datasets collected under different conditions, known as batch effects, can obscure shared structure and complicate their joint visualization. Existing methods often rely on cross-batch nearest-neighbor relations to integrate the batches. Yet, these local correspondences can be u...
+
+
+### Paper 3 — Not All Pairs Align: Caption-Guided Audio-Visual Contrastive Learning
+
+- **Authors:** Omar Emara, Nan Lu, Dima Damen, Hazel Doughty
+- **Link:** http://arxiv.org/abs/2611.32399v1
+
+> We address the problem of learning audio-visual representations from co-occurring modalities. Multimodal contrastive learning typically assumes that paired observations provide shared views of the same underlying information. While this may be true for datasets collected in constrained environments, it does not always hold. For instance, co-occurring audio and visual signals can differ substantial...
